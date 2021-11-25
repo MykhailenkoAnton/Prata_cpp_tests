@@ -4,7 +4,6 @@ int main()
 {
     double donat[ten];
     
-    
 
     int i = 0;
     std::cout << "donat #1: ";
