@@ -7,6 +7,7 @@ int main()
     std::cin >> farlong;
     int yards = far(farlong);
     std::cout << farlong << " = " << yards << " yards!\n";
+    
     return 0;
 }
 int far(int x)
