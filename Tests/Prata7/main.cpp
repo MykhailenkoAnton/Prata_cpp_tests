@@ -12,10 +12,10 @@ int main()
     {
         std::cout << "Enter revalue: ";
         double factor;
-        while(!(std::cin >> factor))
+        while(!(std::cin >> factor))   // неправильный ввод
         {
-            std::cin.clear();
-            while (std::cin.get() != '\n')
+            std::cin.clear();                 
+            while (std::cin.get() != '\n') 
             {
                 continue;
             }
@@ -27,6 +27,7 @@ int main()
     
     return 0;
 }
+ // возвращает количество заполненных массивов
 int fill_array(double ar[], int limit)
 {
     double temp;
@@ -54,6 +55,7 @@ int fill_array(double ar[], int limit)
     }
     return i;
 }
+// вывод на экран
 void show_array(const double ar[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -62,6 +64,7 @@ void show_array(const double ar[], int n)
         std::cout << ar[i] << std::endl;
     }
 }
+// умножает на r каждый елемент ar
 void revalue_factor(double r, double ar[], int n)
 {
     for (int i = 0; i < n; i++)
