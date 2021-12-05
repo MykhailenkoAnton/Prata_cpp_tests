@@ -1,4 +1,7 @@
 #include <iostream>
+#include <cmath>
+#include <string>
+#include <array>
 // int fill_array(double ar[], int limit);
 // void show_array(const double ar[], int n);
 // void revalue_factor(double r, double ar[], int n);
@@ -72,26 +75,298 @@
 //         ar[i] *= r;
 //     }
 // }
-int sum_arr(const int * begin, const int * end);
-const int ArSize = 8;
+
+
+
+// int sum_arr(const int * begin, const int * end);
+// const int ArSize = 8;
+// int main()
+// {
+//     int coockies[ArSize] = {1, 2, 3, 4, 5, 6, 7, 8};
+//     int sum = sum_arr(coockies, coockies + ArSize);
+//     std::cout << "Total coockies eating = " << sum << std::endl;
+//     sum = sum_arr(coockies, coockies + 3);
+//     std::cout << "first 3 = " << sum << std::endl;
+//     sum = sum_arr(coockies + 4, coockies + 8);
+//     std::cout << "Last 4 = " << sum << std::endl;
+//     return 0;
+// }
+// int sum_arr(const int * begin, const int * end)
+// {
+//     const int * pt;
+//     int total = 0;
+//     for (pt = begin; pt != end; pt++)
+//     {
+//         total += *pt;
+//     }
+//     return total;
+// }
+
+
+// unsigned int c_in_str(const char * str, char ch);
+// int main ()
+// {
+//     char name[15] = "minimum";
+//     const char *wail = "ulumate";
+
+//     unsigned int mc = c_in_str(name, 'm');
+//     unsigned int us = c_in_str(wail, 'u');
+
+//     std::cout << "M char = " << mc << std::endl;
+//     std::cout << "U char = " << us << std::endl;
+
+//     return 0;
+// }
+// unsigned int c_in_str(const char * str, char ch)
+// {
+//     unsigned int count = 0;
+//     while (*str)
+//     {
+//         if (*str == ch)
+//         count++;
+//         str++;  // перемещение указателя на следующий символ
+//     }
+//     return count;
+// }
+
+// char * buildstr(char ch, int n);
+// int main()
+// {
+//     std::cout << "Enter ch: ";
+//     char ch;
+//     std::cin >> ch;
+//     std::cout << "Enter nm: ";
+//     int nm;
+//     std::cin >> nm;
+
+//     char * ps = buildstr(ch, nm); 
+//     std::cout << ps << std::endl;
+//     delete [] ps;
+    
+//     ps = buildstr('+', 20);
+//     std::cout << ps << "-----DONE-----" << ps << std::endl;
+//     delete [] ps;
+
+//     return 0;
+// }
+// Строит строку из n символов сh
+// char * buildstr(char ch, int n)
+// {
+//     char * pstr = new char[n + 1];
+//     pstr[n] = '\0';                    
+//     while (n-- > 0)
+//     {
+//         pstr[n] = ch;
+//     }
+//     return pstr;
+    // or
+    // char * pstr = new char[n + 1];
+    // pstr[n] = '\0';
+    // int i = 0;
+    // while (i < n)
+    // {
+    //     pstr[i++] = ch;
+    // }
+    // return pstr;
+// }
+
+
+// const int min_per_h = 60;
+// struct travel_time
+// {
+//     int hours;
+//     int mins;
+// };
+// travel_time sum(travel_time t1, travel_time t2);
+// void show_time(travel_time t);
+// int main ()
+// {
+//     travel_time day_1 = {5, 45};
+//     travel_time day_2 = {4, 55};
+//     travel_time trip  = sum(day_1, day_2);
+//     std::cout << "Two days travel: ";
+//     show_time(trip);
+
+//     travel_time day_3 = {3, 45};
+//     std::cout << "Three days: ";
+//     show_time(sum(trip, day_3));
+
+//     return 0;
+// }
+// travel_time sum(travel_time t1, travel_time t2)
+// {
+//     travel_time total;
+//     total.mins = (t1.mins + t2.mins) % min_per_h;
+//     total.hours = t1.hours + t2.hours + (t1.mins + t2.mins) / min_per_h;
+//     return total;
+// }
+// void show_time(travel_time t)
+// {
+//     std::cout << t.hours << " hours, ";
+//     std::cout << t.mins << " mins.\n";
+// }
+
+
+
+
+
+// struct rect
+// {
+//     double x; // расстояние по горизонтали от исходной точки
+//     double y; // расстояние по вертикали от исходной точки
+// };
+// struct polar
+// {
+//     double distance;  // расстояние от исходной точки
+//     double angle;   // направление от исходной точки
+// };
+// void show_polar(polar dapos);
+// polar rect_to_polar(rect pdx);
+// int main()
+// {
+//     rect rplace;
+//     polar pplace;
+//     std::cout << "Enter the x and у values: ";
+//     while (std::cin >> rplace.x >> rplace.y)
+//     {
+//         pplace = rect_to_polar(rplace);
+//         show_polar(pplace);
+//         std::cout << "Next two numbers (q to quit) : "; // Ввод следующих двух чисел (q для завершения)
+//     }
+//     std::cout << "Done!\n";
+//     return 0;
+// }
+// void show_polar(polar dapos)
+// {
+//     const double Rad_to_deg = 57.29577951;
+
+//     std::cout << "distance = " << dapos.distance;
+//     std::cout << ", angle = " << dapos.angle * Rad_to_deg;
+//     std::cout << " degrees!\n";
+// }
+// polar rect_to_polar(rect pdx)
+// {
+//     polar pda;
+
+//     pda.distance = sqrt(pdx.x * pdx.x + pdx.y * pdx.y);
+//     pda.angle = atan2(pdx.y, pdx.x);
+
+//     return pda; // возврат структуры polar
+// }
+
+
+
+
+// передача адрессов структур
+// struct rect
+// {
+//     double x; // расстояние по горизонтали от исходной точки
+//     double y; // расстояние по вертикали от исходной точки
+// };
+// struct polar
+// {
+//     double distance;  // расстояние от исходной точки
+//     double angle;   // направление от исходной точки
+// };
+// void show_polar(const polar * pda);
+// polar rect_to_polar(const rect * pdx, polar * pda);
+// int main()
+// {
+//     rect rplace;
+//     polar pplace;
+//     std::cout << "Enter the x and у values: ";
+//     while (std::cin >> rplace.x >> rplace.y)
+//     {
+//         rect_to_polar(&rplace, &pplace);// передача адресов
+//         show_polar(&pplace);// передача адресов
+//         std::cout << "Next two numbers (q to quit) : "; // Ввод следующих двух чисел (q для завершения)
+//     }
+//     std::cout << "Done!\n";
+//     return 0;
+// }
+// // Отображение полярных координат с преобразованием радиан в градусы
+// void show_polar(const polar * pda)
+// {
+//     const double Rad_to_deg = 57.29577951;
+
+//     std::cout << "distance = " << pda->distance;
+//     std::cout << ", angle = " << pda->angle * Rad_to_deg;
+//     std::cout << " degrees!\n";
+// }
+// // Преобразование прямоугольных координат в полярные
+// polar rect_to_polar(const rect * pdx, polar * pda)
+// {
+
+//     pda->distance = sqrt(pdx->x * pdx->x + pdx->y * pdx->y);
+//     pda->angle = atan2(pdx->y, pdx->x);
+
+// }
+
+
+
+// const int SIZE = 5;
+// void display(const std::string str[], int n);
+// int main()
+// {
+//     std::string name[SIZE];
+//     std::cout << "Enter your " << SIZE << " favorite astronomical sights:\n";
+//     for (int i = 0; i < SIZE; i++)
+//     {
+//         std::cout << i + 1 << ": ";
+//         getline(std::cin, name[i]);
+
+//     }
+//     display(name, SIZE);
+//     return 0;
+// }
+// void display(const std::string str[], int n)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         std::cout << i + 1 << ": " << str[i] << std::endl;
+//     }
+// }
+
+// const int Seasons = 4;
+// // Функция, использующая объект array, но не изменяющая его
+// void show(std::array <double, 4> da);
+// // Функция для изменения объекта array
+// void fill(std::array <double, 4> * pa);
+
+// const std::array<std::string, Seasons> Snames = {"Spring", "Summer", "Fall", "Winter"};
+// int main()
+// {
+//     std::array<double, Seasons> expenssions;
+//     fill(&expenssions);
+//     show(expenssions);
+//     return 0;
+// }
+
+// void fill(std::array <double, 4> * pa)
+// {
+//     for (int i = 0; i < Seasons; i++)
+//     {
+//         std::cout << "Enter " << Snames[i] << " expenses: ";
+//         std::cin >> (*pa)[i];
+//     }
+// }
+
+// void show(std::array <double, 4> da)
+// {
+//     double total = 0.0;
+//     std::cout << "expenses\n";
+//     for(int i = 0; i < Seasons; i++)
+//     {
+//         std::cout << Snames[i] << ": " << da[i] << std::endl;
+//         total += da[i];
+//     }
+//     std::cout << "Total: " << total << std::endl;
+// }
+
+
+// rekurciya
 int main()
 {
-    int coockies[ArSize] = {1, 2, 3, 4, 5, 6, 7, 8};
-    int sum = sum_arr(coockies, coockies + ArSize);
-    std::cout << "Total coockies eating = " << sum << std::endl;
-    sum = sum_arr(coockies, coockies + 3);
-    std::cout << "first 3 = " << sum << std::endl;
-    sum = sum_arr(coockies + 4, coockies + 8);
-    std::cout << "Last 4 = " << sum << std::endl;
+
     return 0;
-}
-int sum_arr(const int * begin, const int * end)
-{
-    const int * pt;
-    int total = 0;
-    for (pt = begin; pt != end; pt++)
-    {
-        total += *pt;
-    }
-    return total;
 }
