@@ -385,40 +385,134 @@
 
 // rekursiya
 
-const int Len = 66;
-const int Divs = 6;
-void subdivide (char ar[], int low, int hight, int level);
+// const int Len = 66;
+// const int Divs = 6;
+// void subdivide (char ar[], int low, int hight, int level);
 
-int main()
-{
-    char ruler[Len];
-    int i;
-    for (i = 1; i < Len -2; i++)
-    {
-        ruler[i] = ' ';
-    }
-    ruler[Len - 1] = 0;
-    int max = Len - 2;
-    int min = 0;
-    ruler[min] = ruler[max] = '|';
-    std::cout << ruler << std::endl;
-    for (i = 1; i <= Divs; i++)
-    {
-        subdivide(ruler, min, max, i);
-        std::cout << ruler << std::endl;
-        for(int j = 1; j < Len - 2; j++)
-        {
-            ruler[j] = ' ';
-        }
-    }
-    return 0;
-}
-void subdivide (char ar[], int low, int hight, int level)
-{
-    if (level == 0)
-    return;
-    int mid = (hight + low) / 2;
-    ar[mid] = '|';
-    subdivide(ar, low, mid, level - 1);
-    subdivide (ar, mid, hight, level - 1);
-}
+// int main()
+// {
+//     char ruler[Len];
+//     int i;
+//     for (i = 1; i < Len -2; i++)
+//     {
+//         ruler[i] = ' ';
+//     }
+//     ruler[Len - 1] = 0;
+//     int max = Len - 2;
+//     int min = 0;
+//     ruler[min] = ruler[max] = '|';
+//     std::cout << ruler << std::endl;
+//     for (i = 1; i <= Divs; i++)
+//     {
+//         subdivide(ruler, min, max, i);
+//         std::cout << ruler << std::endl;
+//         for(int j = 1; j < Len - 2; j++)
+//         {
+//             ruler[j] = ' ';
+//         }
+//     }
+//     return 0;
+// }
+// void subdivide (char ar[], int low, int hight, int level)
+// {
+//     if (level == 0)
+//     return;
+//     int mid = (hight + low) / 2;
+//     ar[mid] = '|';
+//     subdivide(ar, low, mid, level - 1);
+//     subdivide (ar, mid, hight, level - 1);
+// }
+
+// double betsy(int );
+// double pam(int);
+// void estimate(int lines, double (*pf)(int));
+
+// int main()
+// {
+//     std::cout << "How meny strings u have?";
+//     int str;
+//     std::cin >> str;
+
+//     std::cout << "betsy has: ";
+//     estimate(str, pam);
+//     std::cout << "pam has: ";
+//     estimate(str, betsy);
+
+//     return 0;
+// }
+// double betsy(int a)
+// {
+//     return 0.05 * a;
+// }
+// double pam(int b)
+// {
+//     return 0.2 * b * 0.49;
+// }
+// void estimate(int lines, double (*pf)(int))
+// {
+//     std::cout << lines << " has " << (*pf)(lines) << "hours\n";
+// }
+
+
+// const double * f1 (const double * ar);
+// const double * f2 (const double * ar);
+// const double * f3 (const double * ar);
+
+// int main()
+// {
+//     double av[3] = {1233.3, 4242.2, 6565.3};
+//     const double * (*p1) (const double *) = f1;
+//     auto p2 = f2;
+//     // Использование указателей на функции
+//     std::cout << "Using pointers to functions:\n";
+//     std::cout << " Address Value\n";
+//     std::cout << (*p1)(av) << ": " << *(*p1)(av) << std::endl;
+//     std::cout << p2(av) << ": " << *p2(av) << std::endl;
+
+//     const double * (*pa[3]) (const double *) = {f1, f2, f3};
+//     // Использование массивов указателей на функции
+//     auto pb = pa;
+//     std::cout << "\nUsing an array of pointers to functions:\n";
+//     std::cout << " Address Value\n";
+//     // Использование массивов указателей на функции
+//     for (int i = 0; i < 3; i++)
+//     {
+//         std::cout << pa[i](av) << ": " << *pa[i](av) << std::endl;
+//     }
+//     // Использование указателя на указатель на функцию
+//     std::cout << "\nUsing a pointer to a pointer to a function: \n";
+//     std::cout << " Address Value\n";
+//     for (int i = 0; i < 3; i++)
+//     {
+//         std::cout << pb[i](av) << ": "  << *pb[i](av) << std::endl;
+//     }
+
+//     // Указатель на массив указателей на функции
+//     std::cout << "\nUsing pointers to an array of pointers:\n";
+//     std::cout << " Address Value\n"; // вывод значения адреса
+//     // Простой способ объявления рс
+//     auto pc = &pa;
+//     std::cout << (*pc)[0](av) << ": " << *(*pc)[0](av) << std::endl;
+
+//     // Сложный способ объявления pd
+//     const double *(*(*pd)[3]) (const double *) = &pa;
+//     const double * pdb = (*pd)[1](av);
+//     std::cout << pdb << ": " << *pdb << std::endl;
+
+//     // Альтернативная нотация
+//     std::cout << (*(*pd)[2])(av) << ": " << *(*(*pd)[2])(av) << std::endl;
+
+//     return 0;
+// }
+// const double * f1 (const double * ar)
+// {
+//     return ar;
+// }
+// const double * f2 (const double * ar)
+// {
+//     return ar+1;
+// }
+// const double * f3 (const double * ar)
+// {
+//     return ar+2;
+// }
