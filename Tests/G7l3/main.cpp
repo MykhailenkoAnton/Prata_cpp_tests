@@ -61,8 +61,9 @@ double sum(box s)
 box in(box in)
 {
     box ar;
-    std::cin >> ar.maker;
-
+    
+    std::cin.getline(ar.maker, 40);
+    
     std::cin >> ar.height;
     
     std::cin >> ar.width;
