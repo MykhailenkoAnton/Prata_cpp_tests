@@ -8,7 +8,6 @@ int main()
     double numbers[Max];
     int right_value = fill_array(numbers, Max);
     show_array(numbers, right_value);
-
     std::cout << "Reverse array numbers:\n";
     reserve_array(numbers, right_value);
     show_array(numbers, right_value);
