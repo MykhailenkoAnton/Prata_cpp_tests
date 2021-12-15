@@ -1,6 +1,9 @@
 // #include <iostream>
 // const int Seasons = 4;
 // const char * Seas[Seasons] = {"Spring", "Summer", "Fail", "Winter"};
+
+
+
 // void fill(double * ar_1, int n);
 // void show(double ar[], int n);    
 // int main()
@@ -17,7 +20,6 @@
 //         std::cout << "Enter " << Seas[i] << " expenses: ";
 //         std::cin >> ar_1[i];
 //     }
-    
 // }
 // void show(double ar[], int n)
 // {
@@ -55,7 +57,6 @@
 //         std::cout << "Enter " << Seas[i] << " expenses: ";
 //         std::cin >> y->Siz[i];
 //     }
-    
 // }
 // void show(years yy, int n)
 // {
