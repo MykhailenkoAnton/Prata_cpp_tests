@@ -1,6 +1,6 @@
-#include <iostream>
-const int Seasons = 4;
-const char * Seas[Seasons] = {"Spring", "Summer", "Fail", "Winter"};
+// #include <iostream>
+// const int Seasons = 4;
+// const char * Seas[Seasons] = {"Spring", "Summer", "Fail", "Winter"};
 // void fill(double * ar_1, int n);
 // void show(double ar[], int n);    
 // int main()
@@ -31,36 +31,40 @@ const char * Seas[Seasons] = {"Spring", "Summer", "Fail", "Winter"};
 //     std::cout << "Total expenses = " << total << std::endl;                                    //a
 // }
 
-struct years
-{
-    double Siz[Seasons];
-};
-void fill(years * y, int n);
-void show(years, int n);
-int main()
-{
-    years SEAZ;
-    fill(&SEAZ, Seasons);
-    show(SEAZ, Seasons);
-    return 0;
-}
-void fill(years * y, int n)
-{
-    for (int i = 0; i < Seasons; i++)
-    {
-        std::cout << "Enter " << Seas[i] << " expenses: ";
-        std::cin >> y->Siz[i];
-    }
+
+
+
+
+// struct years
+// {
+//     double Siz[Seasons];
+// };
+// void fill(years * y, int n);
+// void show(years, int n);
+// int main()
+// {
+//     years SEAZ;
+//     fill(&SEAZ, Seasons);
+//     show(SEAZ, Seasons);
+//     return 0;
+// }
+// void fill(years * y, int n)
+// {
+//     for (int i = 0; i < Seasons; i++)
+//     {
+//         std::cout << "Enter " << Seas[i] << " expenses: ";
+//         std::cin >> y->Siz[i];
+//     }
     
-}
-void show(years yy, int n)
-{
-    std::cout << "\nEXPENSES\n";
-    double total = 0.0;
-    for (int i = 0; i < Seasons; i++)
-    {
-        std::cout << Seas[i] << ": $" << yy.Siz[i] << std::endl;
-        total += yy.Siz[i];
-    }
-    std::cout << "total = " << total << std::endl;
-}
+// }
+// void show(years yy, int n)
+// {
+//     std::cout << "\nEXPENSES\n";
+//     double total = 0.0;
+//     for (int i = 0; i < Seasons; i++)
+//     {
+//         std::cout << Seas[i] << ": $" << yy.Siz[i] << std::endl;
+//         total += yy.Siz[i];
+//     }
+//     std::cout << "total = " << total << std::endl;                                //b
+// }
