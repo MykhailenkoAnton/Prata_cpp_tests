@@ -1,6 +1,7 @@
 #include <iostream>
-double dbl(double d, double x);
-double calculate(double x, double y, double (*db) (double, double));
+double dbs(double d, double x);
+double dba(double, double);
+double calculate(double x, double y, double (*db[]) (double, double));
 int main()
 {
     std::cout << "Enter please 2 numbers: ";
@@ -15,10 +16,11 @@ int main()
         }
         std::cout << "Bad input, try again: ";
     }
-    std::cout << calculate(nm1, nm2, dbl);
+    std::cout << "Sum = " <<  calculate(nm1, nm2, dbs) << std::endl;
+    std::cout << "Avarage sum = " << calculate(nm1, nm2, dba) << std::endl;
     return 0;
 }
-double dbl(double a, double b)
+double dbs(double a, double b)
 {
     return a + b;
 }
@@ -27,4 +29,10 @@ double calculate(double x, double y, double (*db)(double, double))
     std::cout << "U rezult is: ";
     double rezult = (*db)(x, y);
     return rezult;
+}
+double dba (double z, double r)
+{
+    double avarage;
+    avarage = (z + r) / 2;
+    return avarage;
 }
