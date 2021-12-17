@@ -434,9 +434,9 @@ int main()
     std::cin >> str;
 
     std::cout << "betsy has: ";
-    estimate(str, pam);
+    estimate(str, (*pam));            // or
     std::cout << "pam has: ";
-    estimate(str, betsy);
+    estimate(str, betsy);          // or
 
     return 0;
 }

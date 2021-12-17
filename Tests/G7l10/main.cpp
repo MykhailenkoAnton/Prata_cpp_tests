@@ -19,7 +19,6 @@ int main()
         std::cout << "Bad input, try again: ";
 
     }
-    
     calculate(nm1, nm2, pf);
     // std::cout << "Avarage sum = " << calculate(nm1, nm2, dba) << std::endl;
     
@@ -38,7 +37,6 @@ void calculate(double x, double y, double (*db[])(double, double))
     {
         std::cout << db[i](x, y) << std::endl;
     }
-    
 }
 double dba (double z, double r)
 {
