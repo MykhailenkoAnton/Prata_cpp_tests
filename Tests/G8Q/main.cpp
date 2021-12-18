@@ -56,7 +56,54 @@
 // }
 
 //8.4
+void swarp(int & a, int & b);
+void swapp(int * p, int * q);
+void swavv(int a, int b);
 int main()
 {
+    int wallet1 = 300;
+    int wallet2 = 400;
+    std::cout << "wallet1 = $" << wallet1;
+    std::cout << ", wallet2 = $" << wallet2 << std::endl;
+
+    std::cout << "Using references to swap contents:\n";
+    swarp(wallet1, wallet2);
+    std::cout << "wallet1 = $" << wallet1;
+    std::cout << ", wallet2 = $" << wallet2 << std::endl;
+
+    int * a = &wallet1;
+    int * b = &wallet2;
+
+    std::cout << "?????? !!! Using pointers to swap contents again:\n";
+    swapp(a, b);
+    std::cout << "wallet1 = $" << wallet1;
+    std::cout << ", wallet2 = $" << wallet2 << std::endl;
+
+    std::cout << "Trying to use passing by value:\n";
+    swavv(wallet1, wallet2);
+    std::cout << "wallet1 = $" << wallet1;
+    std::cout << ", wallet2 = $" << wallet2 << std::endl;
+
     return 0;
+}
+void swarp(int & a, int & b)
+{
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+void swapp(int * p, int * q)
+{
+    int temp;
+    temp = *p;
+    *p = *q;
+    *q = temp;
+}
+void swavv(int a, int b)
+{
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
 }
