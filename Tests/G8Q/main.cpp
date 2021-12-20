@@ -142,7 +142,7 @@ struct free_throws
 };
 void display(const free_throws & ft);
 void set_pc(free_throws & ft);
-free_throws & accumulate(free_throws & target, const free_throws & source);
+const free_throws & accumulate(free_throws & target, const free_throws & source);
 int main()
 {
     free_throws one = {"Ifelsa Branch", 13, 14};
@@ -163,7 +163,9 @@ int main()
     // Использование возвращаемого значения в качестве аргумента
 
     display(accumulate(team, two));
-    accumulate(accumulate(team, three), four);
+    // accumulate(accumulate(team, three), four); // not const
+    accumulate(team, three);
+    accumulate(team, four);        // with const
     display(team);
     
     // Использование возвращаемого значения в присваивании
@@ -179,7 +181,7 @@ int main()
     set_pc(four);
     
     // Отображение dup после неблагоразумного присваивания
-    accumulate(dup, five) = four;
+    // accumulate(dup, five) = four;
     std::cout << "Displaying dup after ill-advised assignment:\n";
     display(dup);
 
@@ -203,10 +205,18 @@ void set_pc(free_throws & ft)
         ft.percent = 0;
     }
 }
-free_throws & accumulate(free_throws & target, const free_throws & source)
+const free_throws & accumulate(free_throws & target, const free_throws & source)
 {
     target.attemps += source.attemps;
     target.made += source.made;
     set_pc(target);
     return target;
 }
+
+//8.7
+
+// int main()
+// {
+
+//     return 0;
+// }
