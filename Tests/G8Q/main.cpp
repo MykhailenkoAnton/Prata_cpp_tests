@@ -56,54 +56,157 @@
 // }
 
 //8.4
-void swarp(int & a, int & b);
-void swapp(int * p, int * q);
-void swavv(int a, int b);
+// void swarp(int & a, int & b);
+// void swapp(int * p, int * q);
+// void swavv(int a, int b);
+// int main()
+// {
+//     int wallet1 = 300;
+//     int wallet2 = 400;
+//     std::cout << "wallet1 = $" << wallet1;
+//     std::cout << ", wallet2 = $" << wallet2 << std::endl;
+
+//     std::cout << "Using references to swap contents:\n";
+//     swarp(wallet1, wallet2);
+//     std::cout << "wallet1 = $" << wallet1;
+//     std::cout << ", wallet2 = $" << wallet2 << std::endl;
+
+//     int * a = &wallet1;
+//     int * b = &wallet2;
+
+//     std::cout << "?????? !!! Using pointers to swap contents again:\n";
+//     swapp(a, b);
+//     std::cout << "wallet1 = $" << wallet1;
+//     std::cout << ", wallet2 = $" << wallet2 << std::endl;
+
+//     std::cout << "Trying to use passing by value:\n";
+//     swavv(wallet1, wallet2);
+//     std::cout << "wallet1 = $" << wallet1;
+//     std::cout << ", wallet2 = $" << wallet2 << std::endl;
+
+//     return 0;
+// }
+// void swarp(int & a, int & b)
+// {
+//     int temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+// }
+// void swapp(int * p, int * q)
+// {
+//     int temp;
+//     temp = *p;
+//     *p = *q;
+//     *q = temp;
+// }
+// void swavv(int a, int b)
+// {
+//     int temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+// }
+
+//8.5
+// double cube(double x);
+// double recube(double & xa);
+// int main()
+// {
+//     double x = 3.0;
+//     std::cout << cube(x);
+//     std:: cout << " cube of " << x << std::endl;
+
+//     std::cout << recube(x);
+//     std::cout << " cube of " << x << std::endl;
+//     return 0;
+// }
+// double cube(double x)
+// {
+//     x *= x * x;
+//     return x;
+// }
+// double recube(double & xa)
+// {
+//     xa *= xa * xa;
+//     return xa;
+// }
+
+// 8.6
+struct free_throws
+{
+    std::string name;
+    int made;
+    int attemps;
+    float percent;
+};
+void display(const free_throws & ft);
+void set_pc(free_throws & ft);
+free_throws & accumulate(free_throws & target, const free_throws & source);
 int main()
 {
-    int wallet1 = 300;
-    int wallet2 = 400;
-    std::cout << "wallet1 = $" << wallet1;
-    std::cout << ", wallet2 = $" << wallet2 << std::endl;
+    free_throws one = {"Ifelsa Branch", 13, 14};
+    free_throws two = {"Andor Knott", 10, 16};
+    free_throws three = {"Minnie Max", 7, 9};
+    free_throws four = {"Whily Looper", 5, 9};
+    free_throws five = {"Long Long", 6, 14};
+    free_throws team = {"Throwgoods", 0, 0};
 
-    std::cout << "Using references to swap contents:\n";
-    swarp(wallet1, wallet2);
-    std::cout << "wallet1 = $" << wallet1;
-    std::cout << ", wallet2 = $" << wallet2 << std::endl;
+    free_throws dup;
+    // без инициализации
 
-    int * a = &wallet1;
-    int * b = &wallet2;
+    set_pc(one);
+    display(one);
+    accumulate(team, one);
+    display(team);
 
-    std::cout << "?????? !!! Using pointers to swap contents again:\n";
-    swapp(a, b);
-    std::cout << "wallet1 = $" << wallet1;
-    std::cout << ", wallet2 = $" << wallet2 << std::endl;
+    // Использование возвращаемого значения в качестве аргумента
 
-    std::cout << "Trying to use passing by value:\n";
-    swavv(wallet1, wallet2);
-    std::cout << "wallet1 = $" << wallet1;
-    std::cout << ", wallet2 = $" << wallet2 << std::endl;
+    display(accumulate(team, two));
+    accumulate(accumulate(team, three), four);
+    display(team);
+    
+    // Использование возвращаемого значения в присваивании
+
+    dup = accumulate(team, five);
+    std::cout << "dispaying team\n";
+    display(team);
+
+    // Отображение dup после присваивания
+
+    std::cout << "Displaying dup after assignment:\n";
+    display(dup);
+    set_pc(four);
+    
+    // Отображение dup после неблагоразумного присваивания
+    accumulate(dup, five) = four;
+    std::cout << "Displaying dup after ill-advised assignment:\n";
+    display(dup);
 
     return 0;
 }
-void swarp(int & a, int & b)
+void display(const free_throws & ft)
 {
-    int temp;
-    temp = a;
-    a = b;
-    b = temp;
+    std::cout << "Name: " << ft.name << std::endl;
+    std::cout << "Made:" << ft.made << '\t';
+    std::cout << "Attemps: " << ft.attemps << '\t';
+    std::cout << "Percent: " << ft.percent << std::endl;
 }
-void swapp(int * p, int * q)
+void set_pc(free_throws & ft)
 {
-    int temp;
-    temp = *p;
-    *p = *q;
-    *q = temp;
+    if (ft.attemps != 0)
+    {
+        ft.percent = 100.0f * float(ft.made) / float(ft.attemps);
+    }
+    else
+    {
+        ft.percent = 0;
+    }
 }
-void swavv(int a, int b)
+free_throws & accumulate(free_throws & target, const free_throws & source)
 {
-    int temp;
-    temp = a;
-    a = b;
-    b = temp;
+    target.attemps += source.attemps;
+    target.made += source.made;
+    set_pc(target);
+    return target;
 }
