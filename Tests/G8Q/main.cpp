@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <fstream>
 // 8.1
 // inline double square(double x) {return x * x;}
 // int main()
@@ -214,43 +216,94 @@
 // }
 
 // 8.7
-std::string version1(const std::string & s1, const std::string & s2);
-const std::string & version2(std::string & s1, const std::string & s2);
-const std::string & version3(std::string & s1, const std::string & s2);
+// std::string version1(const std::string & s1, const std::string & s2);
+// const std::string & version2(std::string & s1, const std::string & s2);
+// const std::string & version3(std::string & s1, const std::string & s2);
+// int main()
+// {
+//     std::string input, copy, rezult;
+//     std::cout << "Enter a string: ";
+//     getline(std::cin, input);
+//     copy = input;
+//     std::cout << "Your string as entered: " << input << std::endl;
+//     rezult = version1(input, "***");
+//     std::cout << "Your string enhanced: " << rezult << std::endl;
+//     std::cout << "Your original string: " << input << std::endl;
+//     rezult = version2(input, "###");
+//     std::cout << "Your string enhanced: " << rezult << std::endl;
+//     std::cout << "Your original string: " << input << std::endl;
+//     std::cout << "Resetting original string.\n";
+//     input = copy;
+//     rezult = version3(input, "&&*&&*&");
+//     std::cout << "Your string enhanced: " << rezult << std::endl;
+//     std::cout << "Your original string: " << input << std::endl;
+//     return 0;
+// }
+// std::string version1(const std::string & s1, const std::string & s2)
+// {
+//     std::string temp;
+//     temp = s2 + s1 + s2;
+//     return temp;
+// }
+// const std::string & version2(std::string & s1, const std::string & s2)
+// {
+//     s1 = s2 + s1 + s2;
+//     return s1;
+// }
+// const std::string & version3(std::string & s1, const std::string & s2)
+// {
+//     std::string temp;
+//     temp = s2 + s1 + s2;
+//     return temp;
+// }
+void file_it(std::ostream & oc, double fo, const double fe[], int n);
+const int LIMIT = 5;
 int main()
 {
-    std::string input, copy, rezult;
-    std::cout << "Enter a string: ";
-    getline(std::cin, input);
-    copy = input;
-    std::cout << "Your string as entered: " << input << std::endl;
-    rezult = version1(input, "***");
-    std::cout << "Your string enhanced: " << rezult << std::endl;
-    std::cout << "Your original string: " << input << std::endl;
-    rezult = version2(input, "###");
-    std::cout << "Your string enhanced: " << rezult << std::endl;
-    std::cout << "Your original string: " << input << std::endl;
-    std::cout << "Resetting original string.\n";
-    input = copy;
-    rezult = version3(input, "&&*&&*&");
-    std::cout << "Your string enhanced: " << rezult << std::endl;
-    std::cout << "Your original string: " << input << std::endl;
+    std::ofstream fout;
+    const char * fn = "ep-data.txt";
+    fout.open(fn);
+    if (!fout.is_open())
+    {
+        std::cout << "Can't open " << fn << ", Bye!\n";
+        exit(EXIT_FAILURE);
+    }
+    double objective;
+    std::cout << "Enter the focal length of your "
+                "telescope objective in mm: ";
+    // Ввод фокусного расстояния объектива телескопа в мм
+    std::cin >> objective;
+    double eps[LIMIT];
+    // Ввод фокусного расстояния окуляров в мм
+    std::cout << "Enter the focal lengths, in mm, of " << LIMIT << "eyepieces:\n";
+    for (int i = 0; i < LIMIT; i++)
+    {
+        std::cout << "Eyepiece #" << i + 1 << ": ";
+        std::cin >> eps[i];
+    }
+    file_it(fout, objective, eps, LIMIT);
+    file_it(std::cout, objective, eps, LIMIT);
+    std::cout << "Done!\n";
     return 0;
 }
-std::string version1(const std::string & s1, const std::string & s2)
+void file_it(std::ostream & os, double fo, const double fe[], int n)
 {
-    std::string temp;
-    temp = s2 + s1 + s2;
-    return temp;
-}
-const std::string & version2(std::string & s1, const std::string & s2)
-{
-    s1 = s2 + s1 + s2;
-    return s1;
-}
-const std::string & version3(std::string & s1, const std::string & s2)
-{
-    std::string temp;
-    temp = s2 + s1 + s2;
-    return temp;
+    std::ios_base::fmtflags initial;
+    initial = os.setf(std::ios_base::fixed);
+    os.precision(0);
+    os << "Focal length of objective: " << fo << " mm\n";
+    os.setf(std::ios::showpoint);
+    os.precision(1);
+    os.width(12);
+    os << "f.l. eyepiece";
+    os.width(15);
+    os << "magnification" << std::endl;
+    for (int i = 0; i < n; i++)
+    {
+        os.width(12);
+        os << fe[i];
+        os.width(15);
+        os << int (fo/fe[i] + 0.5) << std::endl;
+    }
+    os.setf(initial);
 }
