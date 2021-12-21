@@ -133,90 +133,124 @@
 // }
 
 // 8.6
-struct free_throws
-{
-    std::string name;
-    int made;
-    int attemps;
-    float percent;
-};
-void display(const free_throws & ft);
-void set_pc(free_throws & ft);
-const free_throws & accumulate(free_throws & target, const free_throws & source);
-int main()
-{
-    free_throws one = {"Ifelsa Branch", 13, 14};
-    free_throws two = {"Andor Knott", 10, 16};
-    free_throws three = {"Minnie Max", 7, 9};
-    free_throws four = {"Whily Looper", 5, 9};
-    free_throws five = {"Long Long", 6, 14};
-    free_throws team = {"Throwgoods", 0, 0};
-
-    free_throws dup;
-    // без инициализации
-
-    set_pc(one);
-    display(one);
-    accumulate(team, one);
-    display(team);
-
-    // Использование возвращаемого значения в качестве аргумента
-
-    display(accumulate(team, two));
-    // accumulate(accumulate(team, three), four); // not const
-    accumulate(team, three);
-    accumulate(team, four);        // with const
-    display(team);
-    
-    // Использование возвращаемого значения в присваивании
-
-    dup = accumulate(team, five);
-    std::cout << "dispaying team\n";
-    display(team);
-
-    // Отображение dup после присваивания
-
-    std::cout << "Displaying dup after assignment:\n";
-    display(dup);
-    set_pc(four);
-    
-    // Отображение dup после неблагоразумного присваивания
-    // accumulate(dup, five) = four;
-    std::cout << "Displaying dup after ill-advised assignment:\n";
-    display(dup);
-
-    return 0;
-}
-void display(const free_throws & ft)
-{
-    std::cout << "Name: " << ft.name << std::endl;
-    std::cout << "Made:" << ft.made << '\t';
-    std::cout << "Attemps: " << ft.attemps << '\t';
-    std::cout << "Percent: " << ft.percent << std::endl;
-}
-void set_pc(free_throws & ft)
-{
-    if (ft.attemps != 0)
-    {
-        ft.percent = 100.0f * float(ft.made) / float(ft.attemps);
-    }
-    else
-    {
-        ft.percent = 0;
-    }
-}
-const free_throws & accumulate(free_throws & target, const free_throws & source)
-{
-    target.attemps += source.attemps;
-    target.made += source.made;
-    set_pc(target);
-    return target;
-}
-
-//8.7
-
+// struct free_throws
+// {
+//     std::string name;
+//     int made;
+//     int attemps;
+//     float percent;
+// };
+// void display(const free_throws & ft);
+// void set_pc(free_throws & ft);
+// const free_throws & accumulate(free_throws & target, const free_throws & source);
 // int main()
 // {
+//     free_throws one = {"Ifelsa Branch", 13, 14};
+//     free_throws two = {"Andor Knott", 10, 16};
+//     free_throws three = {"Minnie Max", 7, 9};
+//     free_throws four = {"Whily Looper", 5, 9};
+//     free_throws five = {"Long Long", 6, 14};
+//     free_throws team = {"Throwgoods", 0, 0};
+
+//     free_throws dup;
+//     // без инициализации
+
+//     set_pc(one);
+//     display(one);
+//     accumulate(team, one);
+//     display(team);
+
+//     // Использование возвращаемого значения в качестве аргумента
+
+//     display(accumulate(team, two));
+//     // accumulate(accumulate(team, three), four); // not const
+//     accumulate(team, three);
+//     accumulate(team, four);        // with const
+//     display(team);
+    
+//     // Использование возвращаемого значения в присваивании
+
+//     dup = accumulate(team, five);
+//     std::cout << "dispaying team\n";
+//     display(team);
+
+//     // Отображение dup после присваивания
+
+//     std::cout << "Displaying dup after assignment:\n";
+//     display(dup);
+//     set_pc(four);
+    
+//     // Отображение dup после неблагоразумного присваивания
+//     // accumulate(dup, five) = four;
+//     std::cout << "Displaying dup after ill-advised assignment:\n";
+//     display(dup);
 
 //     return 0;
 // }
+// void display(const free_throws & ft)
+// {
+//     std::cout << "Name: " << ft.name << std::endl;
+//     std::cout << "Made:" << ft.made << '\t';
+//     std::cout << "Attemps: " << ft.attemps << '\t';
+//     std::cout << "Percent: " << ft.percent << std::endl;
+// }
+// void set_pc(free_throws & ft)
+// {
+//     if (ft.attemps != 0)
+//     {
+//         ft.percent = 100.0f * float(ft.made) / float(ft.attemps);
+//     }
+//     else
+//     {
+//         ft.percent = 0;
+//     }
+// }
+// const free_throws & accumulate(free_throws & target, const free_throws & source)
+// {
+//     target.attemps += source.attemps;
+//     target.made += source.made;
+//     set_pc(target);
+//     return target;
+// }
+
+// 8.7
+std::string version1(const std::string & s1, const std::string & s2);
+const std::string & version2(std::string & s1, const std::string & s2);
+const std::string & version3(std::string & s1, const std::string & s2);
+int main()
+{
+    std::string input, copy, rezult;
+    std::cout << "Enter a string: ";
+    getline(std::cin, input);
+    copy = input;
+    std::cout << "Your string as entered: " << input << std::endl;
+    rezult = version1(input, "***");
+    std::cout << "Your string enhanced: " << rezult << std::endl;
+    std::cout << "Your original string: " << input << std::endl;
+    rezult = version2(input, "###");
+    std::cout << "Your string enhanced: " << rezult << std::endl;
+    std::cout << "Your original string: " << input << std::endl;
+    std::cout << "Resetting original string.\n";
+    input = copy;
+    rezult = version3(input, "&&*&&*&");
+    std::cout << "Your string enhanced: " << rezult << std::endl;
+    std::cout << "Your original string: " << input << std::endl;
+    return 0;
+}
+std::string version1(const std::string & s1, const std::string & s2)
+{
+    std::string temp;
+    temp = s2 + s1 + s2;
+    return temp;
+}
+const std::string & version2(std::string & s1, const std::string & s2)
+{
+    s1 = s2 + s1 + s2;
+    return s1;
+}
+const std::string & version3(std::string & s1, const std::string & s2)
+{
+    std::string temp;
+    temp = s2 + s1 + s2;
+    return temp;
+}
