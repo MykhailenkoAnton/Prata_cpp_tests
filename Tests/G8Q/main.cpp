@@ -256,6 +256,8 @@
 //     temp = s2 + s1 + s2;
 //     return temp;
 // }
+
+// 8.8
 void file_it(std::ostream & oc, double fo, const double fe[], int n);
 const int LIMIT = 5;
 int main()
