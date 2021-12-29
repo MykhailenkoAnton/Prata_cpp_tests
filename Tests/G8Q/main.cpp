@@ -258,54 +258,152 @@
 // }
 
 // 8.8
-void file_it(std::ostream & oc, double fo, const double fe[], int n);
-const int LIMIT = 5;
+// void file_it(std::ostream & oc, double fo, const double fe[], int n);
+// const int LIMIT = 5;
+// int main()
+// {
+//     std::ofstream fout;
+//     const char * fn = "ep-data.txt";
+//     fout.open(fn);
+//     if (!fout.is_open())
+//     {
+//         std::cout << "Can't open " << fn << ", Bye!\n";
+//         exit(EXIT_FAILURE);
+//     }
+//     double objective;
+//     std::cout << "Enter the focal length of your "
+//                 "telescope objective in mm: ";
+//     // Ввод фокусного расстояния объектива телескопа в мм
+//     std::cin >> objective;
+//     double eps[LIMIT];
+//     // Ввод фокусного расстояния окуляров в мм
+//     std::cout << "Enter the focal lengths, in mm, of " << LIMIT << "eyepieces:\n";
+//     for (int i = 0; i < LIMIT; i++)
+//     {
+//         std::cout << "Eyepiece #" << i + 1 << ": ";
+//         std::cin >> eps[i];
+//     }
+//     file_it(fout, objective, eps, LIMIT);
+//     file_it(std::cout, objective, eps, LIMIT);
+//     std::cout << "Done!\n";
+//     return 0;
+// }
+// void file_it(std::ostream & os, double fo, const double fe[], int n)
+// {
+//     std::ios_base::fmtflags initial;
+//     initial = os.setf(std::ios_base::fixed);
+//     os.precision(0);
+//     os << "Focal length of objective: " << fo << " mm\n";
+//     os.setf(std::ios::showpoint);
+//     os.precision(1);
+//     os.width(12);
+//     os << "f.l. eyepiece";
+//     os.width(15);
+//     os << "magnification" << std::endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         os.width(12);
+//         os << fe[i];
+//         os.width(15);
+//         os << int (fo/fe[i] + 0.5) << std::endl;
+//     }
+//     os.setf(initial);
+// }
+8.9
+const int ArSize = 80;
+char * legt(const char * str, int n = 1);
 int main()
 {
-    std::ofstream fout;
-    const char * fn = "ep-data.txt";
-    fout.open(fn);
-    if (!fout.is_open())
-    {
-        std::cout << "Can't open " << fn << ", Bye!\n";
-        exit(EXIT_FAILURE);
-    }
-    double objective;
-    std::cout << "Enter the focal length of your "
-                "telescope objective in mm: ";
-    // Ввод фокусного расстояния объектива телескопа в мм
-    std::cin >> objective;
-    double eps[LIMIT];
-    // Ввод фокусного расстояния окуляров в мм
-    std::cout << "Enter the focal lengths, in mm, of " << LIMIT << "eyepieces:\n";
-    for (int i = 0; i < LIMIT; i++)
-    {
-        std::cout << "Eyepiece #" << i + 1 << ": ";
-        std::cin >> eps[i];
-    }
-    file_it(fout, objective, eps, LIMIT);
-    file_it(std::cout, objective, eps, LIMIT);
-    std::cout << "Done!\n";
+    char Sample[ArSize];
+    std::cout << "Enter a string: ";
+    std::cin.get(Sample, ArSize);
+    char * ps = legt(Sample, 4);
+    std::cout << ps << std::endl;
+    delete [] ps;
+    ps = legt(Sample);
+    std::cout << ps << std::endl;
+    delete [] ps;
     return 0;
 }
-void file_it(std::ostream & os, double fo, const double fe[], int n)
+char * legt(const char * str, int n)
 {
-    std::ios_base::fmtflags initial;
-    initial = os.setf(std::ios_base::fixed);
-    os.precision(0);
-    os << "Focal length of objective: " << fo << " mm\n";
-    os.setf(std::ios::showpoint);
-    os.precision(1);
-    os.width(12);
-    os << "f.l. eyepiece";
-    os.width(15);
-    os << "magnification" << std::endl;
-    for (int i = 0; i < n; i++)
+    if (n < 0)
     {
-        os.width(12);
-        os << fe[i];
-        os.width(15);
-        os << int (fo/fe[i] + 0.5) << std::endl;
+        n = 0;
     }
-    os.setf(initial);
+    char * p = new char[n + 1];
+    int i;
+    for (i = 0; i < n && str[i]; i++)
+    {
+        p[i] = str[i];
+    }
+    while (i <= n)
+    {
+        p[i++] = '\0';
+    }
+    return p;
+}
+
+//8.10
+unsigned long left(unsigned long num, unsigned ct);
+char * left(const char * str, int n = 1);
+int main()
+{
+    char * trip = "Hawaii!!";
+    unsigned long n = 44444444;
+    int i;
+    char * tepm;
+    for (int i = 1; i < 10; i++)
+    {
+        std::cout << left(n, i) << std::endl;
+        tepm = left(trip, i);
+        std::cout << tepm << std::endl;
+        delete [] tepm;
+    }
+    return 0;
+}
+unsigned long left(unsigned long num, unsigned ct)
+{
+    unsigned digits = 1;
+    unsigned long n = num;
+    if (ct == 0 || num == 0)
+    {
+        return 0;
+    }
+    while (n /= 10)
+    {
+        digits++;
+    }
+    if (digits > ct)
+    {
+        ct = digits - ct;
+        while (ct--)
+        {
+            num /= 10;
+        }
+        return num;
+    }
+    else
+    {
+        return num;
+    }
+}
+char * left(const char * str, int n)
+{
+    if (n < 0)
+    {
+        return 0;
+    }
+    char * p = new char[n + 1];
+    int i;
+    for (i = 0; i < n && str[i]; i++)
+    {
+        p[i] = str[i];
+    }
+    while (i <= n)
+    {
+        p[i] = '\0';
+        i++;
+    }
+    return p;
 }
