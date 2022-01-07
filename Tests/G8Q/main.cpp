@@ -493,56 +493,112 @@
 // }
 
 //8.13
+// template <typename T>
+// void Swap(T &a, T &b);
+// struct job
+// {
+//     char name[40];
+//     double salary;
+//     int floor;
+// };
+// template <> void Swap<job> (job &j1, job &j2);
+// void Show(job &j);
+// int main()
+// {
+//     std::cout.precision(2);
+//     std::cout.setf(std::ios::fixed, std::ios::floatfield);
+//     int i = 10, j = 20;
+//     std::cout << "i, j = " << i << ", " << j << "\n";
+//     std::cout << "Using compiler-generated int swapper:\n";
+//     Swap(i, j);     // генерирует void Swap (int &, int &)
+//     std::cout << "Now i, j = " << i << ", " << j << "\n";
+//     job sue = {"Susan Yaffee", 73000.60, 7};
+//     job sidney = {"Sidney Taffee", 78060.72, 9};
+//     std::cout << "Before job swapping\n";
+//     Show(sue);
+//     Show(sidney);
+//     Swap(sue, sidney);
+//     std::cout << "After job swapping\n";
+//     Show(sue);
+//     Show(sidney);
+//     return 0;
+// }
+// template <typename T>
+// void Swap(T &a, T &b)
+// {
+//     T temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+// }
+// void Show (job &j)
+// {
+//     std::cout << j.name << ": &" << j.salary << " on floar " << j.floor << std::endl;
+// }
+// template <> void Swap<job> (job &j1, job &j2)
+// {
+//     double t1;
+//     int t2;
+//     t1 = j1.salary;
+//     j1.salary = j2.salary;
+//     j2.salary = t1;
+//     t2 = j1.floor;
+//     j1.floor = j2.floor;
+//     j2.floor = t2;
+// }
+
+//8.14
 template <typename T>
-void Swap(T &a, T &b);
-struct job
+void ShowArray(T arr[], int n);  // 1 
+
+template <typename T>
+void ShowArray(T * arr[], int n);  // 2
+struct debts
 {
-    char name[40];
-    double salary;
-    int floor;
+    char name[50];
+    double amount;
 };
-template <> void Swap<job> (job &j1, job &j2);
-void Show(job &j);
+
 int main()
 {
-    std::cout.precision(2);
-    std::cout.setf(std::ios::fixed, std::ios::floatfield);
-    int i = 10, j = 20;
-    std::cout << "i, j = " << i << ", " << j << "\n";
-    std::cout << "Using compiler-generated int swapper:\n";
-    Swap(i, j);     // генерирует void Swap (int &, int &)
-    std::cout << "Now i, j = " << i << ", " << j << "\n";
-    job sue = {"Susan Yaffee", 73000.60, 7};
-    job sidney = {"Sidney Taffee", 78060.72, 9};
-    std::cout << "Before job swapping\n";
-    Show(sue);
-    Show(sidney);
-    Swap(sue, sidney);
-    std::cout << "After job swapping\n";
-    Show(sue);
-    Show(sidney);
+    int thing[6] = {13, 31, 103, 301, 310, 130};
+    struct debts mr_E[3] = 
+    {
+        {"Ima Wolfe", 2400.0},
+        {"Ura Foxe", 1300.0},
+        {"Iby Stout", 1800.0}
+    };
+    double * pd[3];
+    // Установка указателей на члены amount структур в mr_E
+    for (int i = 0; i < 3; i++)
+    {
+        pd[i] = &mr_E[i].amount;
+    }
+    std::cout << "Listing Mr. E's counts of things :\n";
+    ShowArray(thing, 6);  // использует шаблон А
+    std::cout << "Listing Mr. E's debts:\n";
+    // pd - массив указателей на double
+    ShowArray(pd, 3); // использует шаблон В (более специализированный)
     return 0;
 }
 template <typename T>
-void Swap(T &a, T &b)
+void ShowArray(T arr[], int n)
 {
-    T temp;
-    temp = a;
-    a = b;
-    b = temp;
+    std::cout << "Template 1 (A):\n";
+    for (int i = 0; i < n; i++)
+    {
+        std::cout << arr[i] << ' ';
+    }
+    std::cout << std::endl;
+    
 }
-void Show (job &j)
+template <typename T>
+void ShowArray(T * arr[], int n)
 {
-    std::cout << j.name << ": &" << j.salary << " on floar " << j.floor << std::endl;
-}
-template <> void Swap<job> (job &j1, job &j2)
-{
-    double t1;
-    int t2;
-    t1 = j1.salary;
-    j1.salary = j2.salary;
-    j2.salary = t1;
-    t2 = j1.floor;
-    j1.floor = j2.floor;
-    j2.floor = t2;
+    std::cout << "Template 2 (B):\n";
+    for (int i = 0; i < n; i++)
+    {
+        std::cout << *arr[i] << ' ';
+    }
+    std::cout << std::endl;
 }
