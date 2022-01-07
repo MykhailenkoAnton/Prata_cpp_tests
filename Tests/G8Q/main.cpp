@@ -551,54 +551,79 @@
 template <typename T>
 void ShowArray(T arr[], int n);  // 1 
 
-template <typename T>
-void ShowArray(T * arr[], int n);  // 2
-struct debts
-{
-    char name[50];
-    double amount;
-};
+// template <typename T>
+// void ShowArray(T * arr[], int n);  // 2
+// struct debts
+// {
+//     char name[50];
+//     double amount;
+// };
 
+// int main()
+// {
+//     int thing[6] = {13, 31, 103, 301, 310, 130};
+//     struct debts mr_E[3] = 
+//     {
+//         {"Ima Wolfe", 2400.0},
+//         {"Ura Foxe", 1300.0},
+//         {"Iby Stout", 1800.0}
+//     };
+//     double * pd[3];
+//     // Установка указателей на члены amount структур в mr_E
+//     for (int i = 0; i < 3; i++)
+//     {
+//         pd[i] = &mr_E[i].amount;
+//     }
+//     std::cout << "Listing Mr. E's counts of things :\n";
+//     ShowArray(thing, 6);  // использует шаблон А
+//     std::cout << "Listing Mr. E's debts:\n";
+//     // pd - массив указателей на double
+//     ShowArray(pd, 3); // использует шаблон В (более специализированный)
+//     return 0;
+// }
+// template <typename T>
+// void ShowArray(T arr[], int n)
+// {
+//     std::cout << "Template 1 (A):\n";
+//     for (int i = 0; i < n; i++)
+//     {
+//         std::cout << arr[i] << ' ';
+//     }
+//     std::cout << std::endl;
+    
+// }
+// template <typename T>
+// void ShowArray(T * arr[], int n)
+// {
+//     std::cout << "Template 2 (B):\n";
+//     for (int i = 0; i < n; i++)
+//     {
+//         std::cout << *arr[i] << ' ';
+//     }
+//     std::cout << std::endl;
+// }
+
+//8.15
+template <typename T>
+T lesser(T a, T b)
+{
+    return a < b ? a : b;
+}
+int lesser(int a, int b)
+{
+    a = a < 0 ? -a : a;
+    b = b < 0 ? -b : b;
+    return a < b ? a : b;
+}
 int main()
 {
-    int thing[6] = {13, 31, 103, 301, 310, 130};
-    struct debts mr_E[3] = 
-    {
-        {"Ima Wolfe", 2400.0},
-        {"Ura Foxe", 1300.0},
-        {"Iby Stout", 1800.0}
-    };
-    double * pd[3];
-    // Установка указателей на члены amount структур в mr_E
-    for (int i = 0; i < 3; i++)
-    {
-        pd[i] = &mr_E[i].amount;
-    }
-    std::cout << "Listing Mr. E's counts of things :\n";
-    ShowArray(thing, 6);  // использует шаблон А
-    std::cout << "Listing Mr. E's debts:\n";
-    // pd - массив указателей на double
-    ShowArray(pd, 3); // использует шаблон В (более специализированный)
+    int m = 20;
+    int n = -30;
+    double x = 15.5;
+    double y = 29.9;
+    std::cout << lesser(m, n) << std::endl;
+    std::cout << lesser(x, y) << std::endl;
+    std::cout << lesser<>(m, n) << std::endl;
+    std::cout << lesser<int>(x, y) << std::endl;
     return 0;
-}
-template <typename T>
-void ShowArray(T arr[], int n)
-{
-    std::cout << "Template 1 (A):\n";
-    for (int i = 0; i < n; i++)
-    {
-        std::cout << arr[i] << ' ';
-    }
-    std::cout << std::endl;
-    
-}
-template <typename T>
-void ShowArray(T * arr[], int n)
-{
-    std::cout << "Template 2 (B):\n";
-    for (int i = 0; i < n; i++)
-    {
-        std::cout << *arr[i] << ' ';
-    }
-    std::cout << std::endl;
 }
