@@ -126,7 +126,3 @@
 //     return t1.volume > t2.volume ? t1 : t2;
 // }
 
-int main()
-{
-    return 0;
-}
