@@ -1,4 +1,5 @@
 #include <iostream>
+#include <new>
 // void oil(int x);
 // int main()
 // {
@@ -59,3 +60,60 @@
 //     std::cout << count << " characters\n";
 //     std::cout << total << " characters total\n";
 // }
+
+//9.10
+const int BUF = 512;
+const int N = 5;
+char buffer[BUF];
+int main()
+{
+    double *pd1, *pd2;
+    int i;
+    std::cout << "Calling new and placement new:\n";
+    pd1 = new double[N];  // использование кучи
+    pd2 = new (buffer) double[N];  // использование массива buffer
+    for (i = 0; i < N; i++)
+    {
+        pd2[i] = pd1[i] = 1000 + 20.0 * i;
+    }
+    std::cout << "Memory addresses: \n" << " heap: " << pd1 << " static: " << (void *) buffer << std::endl;//вывод адресов памяти
+    std::cout << "Memory contents:\n";                                                 // вывод содержимого памяти
+    for  (i = 0; i < N; i++)
+    {
+        std::cout << pd1[i] << " at " << &pd1 << "; ";
+        std::cout << pd2[i] << " at " << &pd2 << std::endl;
+    }
+    // Вызов обычной и операции new с размещением во второй раз
+    std::cout << "\nCalling new and placement new a second time:\n";
+    double *pd3, *pd4;
+    pd3 = new double[N];  // нахождение нового адреса
+    pd4 = new (buffer) double[N]; // перезаписывание старых данных
+    for (i = 0; i < N; i++)
+    {
+        pd4[i] = pd3[i] = 1000 + 40.0 * i;
+    }
+    std::cout << "Memory contents:\n";
+    for  (i = 0; i < N; i++)
+    {
+        std::cout << pd3[i] << " at " << &pd3 << "; ";
+        std::cout << pd4[i] << " at " << &pd4 << std::endl;
+    }
+    // Вызов обычной и операции new с размещением в третий раз
+    std::cout << "\nCalling new and placement new a third time:\n";
+    delete [] pd1;
+    pd1 = new double[N];
+    pd2 = new(buffer + N * sizeof(double)) double[N];
+    for (i = 0; i < N; i++)
+    {
+        pd2[i] = pd1[i] = 1000 + 60.0 * i;
+    }
+    std::cout << "Memory contents:\n";
+    for  (i = 0; i < N; i++)
+    {
+        std::cout << pd1[i] << " at " << &pd1 << "; ";
+        std::cout << pd2[i] << " at " << &pd2 << std::endl;
+    }
+    delete [] pd1;
+    delete [] pd3;
+    return 0;
+}
