@@ -62,8 +62,23 @@ void Stock::update(double price)
 void Stock::show()
 {
     // Вывод названия компании, количества пакетов, цены пакета и общей стоимости.
+    // std::cout << "Compramy = " << company;
+    // std::cout << " Shares = " << shares << std::endl;
+    // std::cout << " Shares Price: $" << share_val;
+    // std::cout << " Total Worth: $" << total_val << std::endl;
+
+    // or
+
+    // Установка формата в #.###
+    std::ios_base::fmtflags orig = std::cout.setf(std::ios_base::fixed, std::ios_base::floatfield);
+    std::streamsize prec = std::cout.precision(3);
     std::cout << "Compramy = " << company;
     std::cout << " Shares = " << shares << std::endl;
     std::cout << " Shares Price: $" << share_val;
+    // Установка формата в #.##
+    std::cout.precision(2);
     std::cout << " Total Worth: $" << total_val << std::endl;
+    // Восстановление исходного формата
+    std::cout.setf(orig, std::ios_base::floatfield);
+    std::cout.precision(prec);
 }
