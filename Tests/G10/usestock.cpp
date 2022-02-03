@@ -15,13 +15,17 @@ int main()
     // fluffy_the_cat.show();
 
     // + конструктор и дестркутор
-
+    Stock * s;
     std::cout << "Using constructors to create new objects\n";
+
     Stock stock1("NanoSmart", 12, 20.0); // первый синтаксис
+    s = new Stock("NanoSmart", 12, 20.0);
+
     stock1.show();
     Stock stock2 = Stock("Bobo object", 2, 2.0); // второй синтаксис
     stock2.show();
-    
+
+    delete s;
     // Присваивание stockl объекту stock2
     std::cout << "Assigning stockl to stock2:\n";
     stock2 = stock1;

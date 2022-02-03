@@ -45,5 +45,4 @@ class Stock {
         void show();
 };
 
-
 #endif
