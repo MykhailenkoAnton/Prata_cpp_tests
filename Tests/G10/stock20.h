@@ -10,7 +10,7 @@ private:
     double total_val;
 public:
     Stock();
-    Stock::Stock(const std::string & co, long n, double pr);
+    Stock(const std::string & co, long n, double pr);
     ~Stock();
     void buy(long num, double price);
     void sell(long num, double price);

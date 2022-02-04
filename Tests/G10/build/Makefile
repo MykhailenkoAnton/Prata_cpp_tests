@@ -111,71 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named STOCK
+# Target rules for targets named STOCK20
 
 # Build rule for target.
-STOCK: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 STOCK
-.PHONY : STOCK
+STOCK20: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 STOCK20
+.PHONY : STOCK20
 
 # fast build rule for target.
-STOCK/fast:
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/build
-.PHONY : STOCK/fast
+STOCK20/fast:
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/build
+.PHONY : STOCK20/fast
 
-stock00.o: stock00.cpp.o
+stock20.o: stock20.cpp.o
 
-.PHONY : stock00.o
-
-# target to build an object file
-stock00.cpp.o:
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/stock00.cpp.o
-.PHONY : stock00.cpp.o
-
-stock00.i: stock00.cpp.i
-
-.PHONY : stock00.i
-
-# target to preprocess a source file
-stock00.cpp.i:
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/stock00.cpp.i
-.PHONY : stock00.cpp.i
-
-stock00.s: stock00.cpp.s
-
-.PHONY : stock00.s
-
-# target to generate assembly for a file
-stock00.cpp.s:
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/stock00.cpp.s
-.PHONY : stock00.cpp.s
-
-usestock.o: usestock.cpp.o
-
-.PHONY : usestock.o
+.PHONY : stock20.o
 
 # target to build an object file
-usestock.cpp.o:
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/usestock.cpp.o
-.PHONY : usestock.cpp.o
+stock20.cpp.o:
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/stock20.cpp.o
+.PHONY : stock20.cpp.o
 
-usestock.i: usestock.cpp.i
+stock20.i: stock20.cpp.i
 
-.PHONY : usestock.i
+.PHONY : stock20.i
 
 # target to preprocess a source file
-usestock.cpp.i:
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/usestock.cpp.i
-.PHONY : usestock.cpp.i
+stock20.cpp.i:
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/stock20.cpp.i
+.PHONY : stock20.cpp.i
 
-usestock.s: usestock.cpp.s
+stock20.s: stock20.cpp.s
 
-.PHONY : usestock.s
+.PHONY : stock20.s
 
 # target to generate assembly for a file
-usestock.cpp.s:
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/usestock.cpp.s
-.PHONY : usestock.cpp.s
+stock20.cpp.s:
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/stock20.cpp.s
+.PHONY : stock20.cpp.s
+
+usestock20.o: usestock20.cpp.o
+
+.PHONY : usestock20.o
+
+# target to build an object file
+usestock20.cpp.o:
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/usestock20.cpp.o
+.PHONY : usestock20.cpp.o
+
+usestock20.i: usestock20.cpp.i
+
+.PHONY : usestock20.i
+
+# target to preprocess a source file
+usestock20.cpp.i:
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/usestock20.cpp.i
+.PHONY : usestock20.cpp.i
+
+usestock20.s: usestock20.cpp.s
+
+.PHONY : usestock20.s
+
+# target to generate assembly for a file
+usestock20.cpp.s:
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/usestock20.cpp.s
+.PHONY : usestock20.cpp.s
 
 # Help Target
 help:
@@ -185,13 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... STOCK"
-	@echo "... stock00.o"
-	@echo "... stock00.i"
-	@echo "... stock00.s"
-	@echo "... usestock.o"
-	@echo "... usestock.i"
-	@echo "... usestock.s"
+	@echo "... STOCK20"
+	@echo "... stock20.o"
+	@echo "... stock20.i"
+	@echo "... stock20.s"
+	@echo "... usestock20.o"
+	@echo "... usestock20.i"
+	@echo "... usestock20.s"
 .PHONY : help
 
 

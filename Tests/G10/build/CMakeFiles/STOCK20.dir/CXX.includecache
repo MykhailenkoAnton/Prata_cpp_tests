@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anton/Documents/Prata_cpp_tests/Tests/G10/stock20.h
+string
+-
+
+/home/anton/Documents/Prata_cpp_tests/Tests/G10/usestock20.cpp
+iostream
+-
+stock20.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G10/stock20.h
+

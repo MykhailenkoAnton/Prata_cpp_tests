@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/anton/Documents/Prata_cpp_tests/Tests/G10/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/STOCK.dir/all
+all: CMakeFiles/STOCK20.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/STOCK.dir/clean
+clean: CMakeFiles/STOCK20.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/STOCK.dir
+# Target rules for target CMakeFiles/STOCK20.dir
 
 # All Build rule for target.
-CMakeFiles/STOCK.dir/all:
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/depend
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/Documents/Prata_cpp_tests/Tests/G10/build/CMakeFiles --progress-num=1,2,3 "Built target STOCK"
-.PHONY : CMakeFiles/STOCK.dir/all
+CMakeFiles/STOCK20.dir/all:
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/depend
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/Documents/Prata_cpp_tests/Tests/G10/build/CMakeFiles --progress-num=1,2,3 "Built target STOCK20"
+.PHONY : CMakeFiles/STOCK20.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/STOCK.dir/rule: cmake_check_build_system
+CMakeFiles/STOCK20.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/Documents/Prata_cpp_tests/Tests/G10/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/STOCK.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/STOCK20.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/Documents/Prata_cpp_tests/Tests/G10/build/CMakeFiles 0
-.PHONY : CMakeFiles/STOCK.dir/rule
+.PHONY : CMakeFiles/STOCK20.dir/rule
 
 # Convenience name for target.
-STOCK: CMakeFiles/STOCK.dir/rule
+STOCK20: CMakeFiles/STOCK20.dir/rule
 
-.PHONY : STOCK
+.PHONY : STOCK20
 
 # clean rule for target.
-CMakeFiles/STOCK.dir/clean:
-	$(MAKE) -f CMakeFiles/STOCK.dir/build.make CMakeFiles/STOCK.dir/clean
-.PHONY : CMakeFiles/STOCK.dir/clean
+CMakeFiles/STOCK20.dir/clean:
+	$(MAKE) -f CMakeFiles/STOCK20.dir/build.make CMakeFiles/STOCK20.dir/clean
+.PHONY : CMakeFiles/STOCK20.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

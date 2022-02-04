@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/STOCK20.dir/usestock20.cpp.o CMakeFiles/STOCK20.dir/stock20.cpp.o  -o STOCK20 
