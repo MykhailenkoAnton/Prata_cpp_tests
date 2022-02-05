@@ -26,7 +26,7 @@
 					[
 						0
 					],
-					"name" : "STOCK",
+					"name" : "stack",
 					"targetIndexes" : 
 					[
 						0
@@ -37,9 +37,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "STOCK20::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STOCK20-Debug-ca6911c7eb2bbbd9c305.json",
-					"name" : "STOCK20",
+					"id" : "stack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stack-Debug-ec77a7895aa26682592d.json",
+					"name" : "stack",
 					"projectIndex" : 0
 				}
 			]

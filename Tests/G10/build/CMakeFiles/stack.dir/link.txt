@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/stack.dir/stack.cpp.o CMakeFiles/stack.dir/stacker.cpp.o  -o stack 

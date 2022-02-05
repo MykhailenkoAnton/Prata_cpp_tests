@@ -144,7 +144,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=STOCK
+CMAKE_PROJECT_NAME:STATIC=stack
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/bin/ranlib
@@ -219,6 +219,12 @@ STOCK_BINARY_DIR:STATIC=/home/anton/Documents/Prata_cpp_tests/Tests/G10/build
 
 //Value Computed by CMake
 STOCK_SOURCE_DIR:STATIC=/home/anton/Documents/Prata_cpp_tests/Tests/G10
+
+//Value Computed by CMake
+stack_BINARY_DIR:STATIC=/home/anton/Documents/Prata_cpp_tests/Tests/G10/build
+
+//Value Computed by CMake
+stack_SOURCE_DIR:STATIC=/home/anton/Documents/Prata_cpp_tests/Tests/G10
 
 
 ########################

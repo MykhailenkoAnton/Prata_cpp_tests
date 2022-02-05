@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "STOCK20"
+			"path" : "stack"
 		}
 	],
 	"backtrace" : 1,
@@ -46,7 +46,7 @@
 			]
 		}
 	],
-	"id" : "STOCK20::@6890427a1f51a3e7e1df",
+	"id" : "stack::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -62,8 +62,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "STOCK20",
-	"nameOnDisk" : "STOCK20",
+	"name" : "stack",
+	"nameOnDisk" : "stack",
 	"paths" : 
 	{
 		"build" : ".",
@@ -85,13 +85,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "usestock20.cpp",
+			"path" : "stack.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "stock20.cpp",
+			"path" : "stacker.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
