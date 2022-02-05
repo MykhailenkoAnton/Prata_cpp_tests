@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l1/req.cpp
+string
+-
+requisites.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l1/requisites.h
+
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l1/requisites.h
+
