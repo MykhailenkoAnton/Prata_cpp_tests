@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l3/GOLF.cpp
+iostream
+-
+golf10.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l3/golf10.h
+
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l3/golf10.h
+string
+-
+
