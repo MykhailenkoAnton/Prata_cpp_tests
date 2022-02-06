@@ -1,6 +1,6 @@
 #ifndef REQUISITES_H_
 #define REQUISITES_H_
-
+#include <string>
 class requisites
 {
 private:
