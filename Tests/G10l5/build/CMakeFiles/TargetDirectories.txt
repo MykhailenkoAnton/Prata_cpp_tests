@@ -1,0 +1,3 @@
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l5/build/CMakeFiles/rebuild_cache.dir
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l5/build/CMakeFiles/edit_cache.dir
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l5/build/CMakeFiles/G10L5.dir

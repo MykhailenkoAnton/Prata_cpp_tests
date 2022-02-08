@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G10l5/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G10L5.dir/stack.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G10l5/stack.cpp",
+  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G10l5/stack.cpp"
+},
+{
+  "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G10l5/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G10L5.dir/usestack.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G10l5/usestack.cpp",
+  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G10l5/usestack.cpp"
+}
+]

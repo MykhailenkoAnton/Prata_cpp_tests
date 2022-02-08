@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/G10L5.dir/stack.cpp.o CMakeFiles/G10L5.dir/usestack.cpp.o  -o G10L5 
