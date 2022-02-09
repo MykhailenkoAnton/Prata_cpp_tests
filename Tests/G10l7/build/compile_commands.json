@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G10l7/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G10L7.dir/prorg.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G10l7/prorg.cpp",
+  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G10l7/prorg.cpp"
+},
+{
+  "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G10l7/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G10L7.dir/runplorg.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G10l7/runplorg.cpp",
+  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G10l7/runplorg.cpp"
+}
+]
