@@ -32,8 +32,10 @@ bool stack::pop(customer & COSTUMER)
 {
     if (top > 0)
     {
+        double x = COSTUMER.paymant;
         COSTUMER.name = cust[--top].name;
-        COSTUMER.paymant = cust[top].paymant;
+        COSTUMER.paymant = cust[top].paymant + x;
+        
         return true;
     }
     else
