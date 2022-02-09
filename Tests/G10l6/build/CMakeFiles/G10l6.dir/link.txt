@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/G10l6.dir/move.cpp.o CMakeFiles/G10l6.dir/runmove.cpp.o  -o G10l6 
