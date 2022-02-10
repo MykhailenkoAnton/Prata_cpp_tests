@@ -7,9 +7,23 @@
 #IncludeRegexTransform: 
 
 /home/anton/Documents/Prata_cpp_tests/Tests/G10l7/plorg.h
+string
+-
+
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l7/prorg.cpp
+iostream
+-
+cstdlib
+-
+cstring
+-
+plorg.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G10l7/plorg.h
 
 /home/anton/Documents/Prata_cpp_tests/Tests/G10l7/runplorg.cpp
 iostream
+-
+cstring
 -
 plorg.h
 /home/anton/Documents/Prata_cpp_tests/Tests/G10l7/plorg.h

@@ -9,21 +9,34 @@ void plorg::showplorg()
 }
 void plorg::add_CI(int n)
 {
-    CI += n;
+    CI = n;
 }
 void plorg::pop_CI(int n)
 {
     CI -= n;
 }
-// plorg::plorg(const char * plor, int n)
-// {
-//     std::cout << plor << ", " << n << std::endl;
-//     strcpy(name, plor);
-//     CI = n;
-// }
 plorg::plorg()
 {
-    const char * pl = "Plorga";
-    strcpy(name, pl);
+    name = "Plorga";
     CI = 50;
+}
+void plorg::set_name(const std::string & str)
+{
+    name = str;
+    
+}
+std::string plorg::get_name() const
+{
+    return name;
+}
+void plorg::compare_CI(plorg & P) const
+{
+    if (P.CI > this->CI)
+    {
+        cout << P.CI;
+    }
+    else
+    {
+        cout << this->CI;
+    }
 }
