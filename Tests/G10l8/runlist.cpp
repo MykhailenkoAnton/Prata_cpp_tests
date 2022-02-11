@@ -30,22 +30,24 @@ int main()
     }
     LS.show();
 
-    // List LS1;
-    // std::string namen;
-    // if (LS1.isEmpty())
-    // {
-    //     for (int i = 0; i < 4; i++)
-    //     {
-    //         getline(std::cin, namen);
-    //         LS1.add(namen);
-    //     }
-    // }
-    // std::cout << std::endl;
-    // LS1.show();
-
     LS.visit(change_IT);
 
     LS.show();
 
+
+    List LS1;
+    std::string namen;
+    if (LS1.isEmpty())
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            getline(std::cin, namen);
+            LS1.add(namen);
+        }
+    }
+    std::cout << std::endl;
+    LS1.show();
+    LS1.visit(change_IT);
+    LS1.show();
     return 0;
 }
