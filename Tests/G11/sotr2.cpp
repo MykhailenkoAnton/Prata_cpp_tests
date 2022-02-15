@@ -25,8 +25,6 @@ int main()
         std::cout << ar[i] << std::endl;
     }
 
-
-
     return 0;
 }
 
