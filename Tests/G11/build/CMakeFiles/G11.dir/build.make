@@ -57,27 +57,27 @@ include CMakeFiles/G11.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/G11.dir/flags.make
 
-CMakeFiles/G11.dir/main.cpp.o: CMakeFiles/G11.dir/flags.make
-CMakeFiles/G11.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/Documents/Prata_cpp_tests/Tests/G11/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/G11.dir/main.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/G11.dir/main.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/main.cpp
+CMakeFiles/G11.dir/sotr2.cpp.o: CMakeFiles/G11.dir/flags.make
+CMakeFiles/G11.dir/sotr2.cpp.o: ../sotr2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/Documents/Prata_cpp_tests/Tests/G11/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/G11.dir/sotr2.cpp.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/G11.dir/sotr2.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/sotr2.cpp
 
-CMakeFiles/G11.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/G11.dir/main.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/Documents/Prata_cpp_tests/Tests/G11/main.cpp > CMakeFiles/G11.dir/main.cpp.i
+CMakeFiles/G11.dir/sotr2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/G11.dir/sotr2.cpp.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/Documents/Prata_cpp_tests/Tests/G11/sotr2.cpp > CMakeFiles/G11.dir/sotr2.cpp.i
 
-CMakeFiles/G11.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/G11.dir/main.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/Documents/Prata_cpp_tests/Tests/G11/main.cpp -o CMakeFiles/G11.dir/main.cpp.s
+CMakeFiles/G11.dir/sotr2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/G11.dir/sotr2.cpp.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/Documents/Prata_cpp_tests/Tests/G11/sotr2.cpp -o CMakeFiles/G11.dir/sotr2.cpp.s
 
 # Object files for target G11
 G11_OBJECTS = \
-"CMakeFiles/G11.dir/main.cpp.o"
+"CMakeFiles/G11.dir/sotr2.cpp.o"
 
 # External object files for target G11
 G11_EXTERNAL_OBJECTS =
 
-G11: CMakeFiles/G11.dir/main.cpp.o
+G11: CMakeFiles/G11.dir/sotr2.cpp.o
 G11: CMakeFiles/G11.dir/build.make
 G11: CMakeFiles/G11.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton/Documents/Prata_cpp_tests/Tests/G11/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable G11"

@@ -123,32 +123,32 @@ G11/fast:
 	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/build
 .PHONY : G11/fast
 
-main.o: main.cpp.o
+sotr2.o: sotr2.cpp.o
 
-.PHONY : main.o
+.PHONY : sotr2.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/main.cpp.o
-.PHONY : main.cpp.o
+sotr2.cpp.o:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/sotr2.cpp.o
+.PHONY : sotr2.cpp.o
 
-main.i: main.cpp.i
+sotr2.i: sotr2.cpp.i
 
-.PHONY : main.i
+.PHONY : sotr2.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/main.cpp.i
-.PHONY : main.cpp.i
+sotr2.cpp.i:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/sotr2.cpp.i
+.PHONY : sotr2.cpp.i
 
-main.s: main.cpp.s
+sotr2.s: sotr2.cpp.s
 
-.PHONY : main.s
+.PHONY : sotr2.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/main.cpp.s
-.PHONY : main.cpp.s
+sotr2.cpp.s:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/sotr2.cpp.s
+.PHONY : sotr2.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... G11"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... sotr2.o"
+	@echo "... sotr2.i"
+	@echo "... sotr2.s"
 .PHONY : help
 
 
