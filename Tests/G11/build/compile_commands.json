@@ -1,12 +1,7 @@
 [
 {
   "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/time.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/time.cpp",
-  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/time.cpp"
-},
-{
-  "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/runtime.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/runtime.cpp",
-  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/runtime.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/sotr2.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/sotr2.cpp",
+  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/sotr2.cpp"
 }
 ]

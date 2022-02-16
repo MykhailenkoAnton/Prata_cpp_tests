@@ -123,59 +123,32 @@ G11/fast:
 	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/build
 .PHONY : G11/fast
 
-runtime.o: runtime.cpp.o
+sotr2.o: sotr2.cpp.o
 
-.PHONY : runtime.o
-
-# target to build an object file
-runtime.cpp.o:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime.cpp.o
-.PHONY : runtime.cpp.o
-
-runtime.i: runtime.cpp.i
-
-.PHONY : runtime.i
-
-# target to preprocess a source file
-runtime.cpp.i:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime.cpp.i
-.PHONY : runtime.cpp.i
-
-runtime.s: runtime.cpp.s
-
-.PHONY : runtime.s
-
-# target to generate assembly for a file
-runtime.cpp.s:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime.cpp.s
-.PHONY : runtime.cpp.s
-
-time.o: time.cpp.o
-
-.PHONY : time.o
+.PHONY : sotr2.o
 
 # target to build an object file
-time.cpp.o:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time.cpp.o
-.PHONY : time.cpp.o
+sotr2.cpp.o:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/sotr2.cpp.o
+.PHONY : sotr2.cpp.o
 
-time.i: time.cpp.i
+sotr2.i: sotr2.cpp.i
 
-.PHONY : time.i
+.PHONY : sotr2.i
 
 # target to preprocess a source file
-time.cpp.i:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time.cpp.i
-.PHONY : time.cpp.i
+sotr2.cpp.i:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/sotr2.cpp.i
+.PHONY : sotr2.cpp.i
 
-time.s: time.cpp.s
+sotr2.s: sotr2.cpp.s
 
-.PHONY : time.s
+.PHONY : sotr2.s
 
 # target to generate assembly for a file
-time.cpp.s:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time.cpp.s
-.PHONY : time.cpp.s
+sotr2.cpp.s:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/sotr2.cpp.s
+.PHONY : sotr2.cpp.s
 
 # Help Target
 help:
@@ -186,12 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... G11"
-	@echo "... runtime.o"
-	@echo "... runtime.i"
-	@echo "... runtime.s"
-	@echo "... time.o"
-	@echo "... time.i"
-	@echo "... time.s"
+	@echo "... sotr2.o"
+	@echo "... sotr2.i"
+	@echo "... sotr2.s"
 .PHONY : help
 
 
