@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/G11.dir/sotr2.cpp.o"
+  "CMakeFiles/G11.dir/runtime.cpp.o"
+  "CMakeFiles/G11.dir/time.cpp.o"
   "G11"
   "G11.pdb"
 )

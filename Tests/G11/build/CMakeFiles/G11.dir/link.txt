@@ -1,1 +1,1 @@
-/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/G11.dir/sotr2.cpp.o  -o G11 
+/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/G11.dir/time.cpp.o CMakeFiles/G11.dir/runtime.cpp.o  -o G11 

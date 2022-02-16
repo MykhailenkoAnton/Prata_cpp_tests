@@ -123,32 +123,59 @@ G11/fast:
 	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/build
 .PHONY : G11/fast
 
-sotr2.o: sotr2.cpp.o
+runtime.o: runtime.cpp.o
 
-.PHONY : sotr2.o
+.PHONY : runtime.o
 
 # target to build an object file
-sotr2.cpp.o:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/sotr2.cpp.o
-.PHONY : sotr2.cpp.o
+runtime.cpp.o:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime.cpp.o
+.PHONY : runtime.cpp.o
 
-sotr2.i: sotr2.cpp.i
+runtime.i: runtime.cpp.i
 
-.PHONY : sotr2.i
+.PHONY : runtime.i
 
 # target to preprocess a source file
-sotr2.cpp.i:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/sotr2.cpp.i
-.PHONY : sotr2.cpp.i
+runtime.cpp.i:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime.cpp.i
+.PHONY : runtime.cpp.i
 
-sotr2.s: sotr2.cpp.s
+runtime.s: runtime.cpp.s
 
-.PHONY : sotr2.s
+.PHONY : runtime.s
 
 # target to generate assembly for a file
-sotr2.cpp.s:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/sotr2.cpp.s
-.PHONY : sotr2.cpp.s
+runtime.cpp.s:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime.cpp.s
+.PHONY : runtime.cpp.s
+
+time.o: time.cpp.o
+
+.PHONY : time.o
+
+# target to build an object file
+time.cpp.o:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time.cpp.o
+.PHONY : time.cpp.o
+
+time.i: time.cpp.i
+
+.PHONY : time.i
+
+# target to preprocess a source file
+time.cpp.i:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time.cpp.i
+.PHONY : time.cpp.i
+
+time.s: time.cpp.s
+
+.PHONY : time.s
+
+# target to generate assembly for a file
+time.cpp.s:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time.cpp.s
+.PHONY : time.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... G11"
-	@echo "... sotr2.o"
-	@echo "... sotr2.i"
-	@echo "... sotr2.s"
+	@echo "... runtime.o"
+	@echo "... runtime.i"
+	@echo "... runtime.s"
+	@echo "... time.o"
+	@echo "... time.i"
+	@echo "... time.s"
 .PHONY : help
 
 
