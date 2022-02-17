@@ -85,13 +85,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "time.cpp",
+			"path" : "time2.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "runtime.cpp",
+			"path" : "runtime2.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

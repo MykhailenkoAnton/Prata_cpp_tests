@@ -123,59 +123,59 @@ G11/fast:
 	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/build
 .PHONY : G11/fast
 
-runtime.o: runtime.cpp.o
+runtime2.o: runtime2.cpp.o
 
-.PHONY : runtime.o
-
-# target to build an object file
-runtime.cpp.o:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime.cpp.o
-.PHONY : runtime.cpp.o
-
-runtime.i: runtime.cpp.i
-
-.PHONY : runtime.i
-
-# target to preprocess a source file
-runtime.cpp.i:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime.cpp.i
-.PHONY : runtime.cpp.i
-
-runtime.s: runtime.cpp.s
-
-.PHONY : runtime.s
-
-# target to generate assembly for a file
-runtime.cpp.s:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime.cpp.s
-.PHONY : runtime.cpp.s
-
-time.o: time.cpp.o
-
-.PHONY : time.o
+.PHONY : runtime2.o
 
 # target to build an object file
-time.cpp.o:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time.cpp.o
-.PHONY : time.cpp.o
+runtime2.cpp.o:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime2.cpp.o
+.PHONY : runtime2.cpp.o
 
-time.i: time.cpp.i
+runtime2.i: runtime2.cpp.i
 
-.PHONY : time.i
+.PHONY : runtime2.i
 
 # target to preprocess a source file
-time.cpp.i:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time.cpp.i
-.PHONY : time.cpp.i
+runtime2.cpp.i:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime2.cpp.i
+.PHONY : runtime2.cpp.i
 
-time.s: time.cpp.s
+runtime2.s: runtime2.cpp.s
 
-.PHONY : time.s
+.PHONY : runtime2.s
 
 # target to generate assembly for a file
-time.cpp.s:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time.cpp.s
-.PHONY : time.cpp.s
+runtime2.cpp.s:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/runtime2.cpp.s
+.PHONY : runtime2.cpp.s
+
+time2.o: time2.cpp.o
+
+.PHONY : time2.o
+
+# target to build an object file
+time2.cpp.o:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time2.cpp.o
+.PHONY : time2.cpp.o
+
+time2.i: time2.cpp.i
+
+.PHONY : time2.i
+
+# target to preprocess a source file
+time2.cpp.i:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time2.cpp.i
+.PHONY : time2.cpp.i
+
+time2.s: time2.cpp.s
+
+.PHONY : time2.s
+
+# target to generate assembly for a file
+time2.cpp.s:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/time2.cpp.s
+.PHONY : time2.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... G11"
-	@echo "... runtime.o"
-	@echo "... runtime.i"
-	@echo "... runtime.s"
-	@echo "... time.o"
-	@echo "... time.i"
-	@echo "... time.s"
+	@echo "... runtime2.o"
+	@echo "... runtime2.i"
+	@echo "... runtime2.s"
+	@echo "... time2.o"
+	@echo "... time2.i"
+	@echo "... time2.s"
 .PHONY : help
 
 
