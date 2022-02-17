@@ -46,7 +46,7 @@ int main()
     std::cout << std::endl;
 
     std::cout << "waxing time = "; // полезное время
-    waxing.Show();
+    std::cout << waxing;
     std::cout << std::endl;
 
     std::cout << "Total work time = "; // общее рабочее время
@@ -64,5 +64,8 @@ int main()
     adjusted.Show();
     std::cout << std::endl;
 
+
+    Time trip(19, 22);
+    std::cout << "Time trip = " << trip << "(Thuesday)\n";
     return 0;
 }

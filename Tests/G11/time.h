@@ -1,6 +1,5 @@
 #ifndef TIME_H_
 #define TIME_H_
-
 class Time
 {
 private:
@@ -16,6 +15,9 @@ public:
     Time operator-(const Time & t) const;
     Time operator*(double n);
     void Show() const;
+    friend Time operator*(double m, const Time & t);
+    // friend void operator<<(std::ostream &, const Time &);
+    friend std::ostream & operator<<(std::ostream &, const Time &);
 };
 
 
