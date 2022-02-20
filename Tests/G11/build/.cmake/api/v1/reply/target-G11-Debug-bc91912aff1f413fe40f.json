@@ -85,13 +85,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "stonew.cpp",
+			"path" : "stonewt1.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "useston.cpp",
+			"path" : "useston1.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

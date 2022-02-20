@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonew.cpp" "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build/CMakeFiles/G11.dir/stonew.cpp.o"
-  "/home/anton/Documents/Prata_cpp_tests/Tests/G11/useston.cpp" "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build/CMakeFiles/G11.dir/useston.cpp.o"
+  "/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt1.cpp" "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build/CMakeFiles/G11.dir/stonewt1.cpp.o"
+  "/home/anton/Documents/Prata_cpp_tests/Tests/G11/useston1.cpp" "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build/CMakeFiles/G11.dir/useston1.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

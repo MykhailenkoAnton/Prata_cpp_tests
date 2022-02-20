@@ -123,59 +123,59 @@ G11/fast:
 	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/build
 .PHONY : G11/fast
 
-stonew.o: stonew.cpp.o
+stonewt1.o: stonewt1.cpp.o
 
-.PHONY : stonew.o
-
-# target to build an object file
-stonew.cpp.o:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/stonew.cpp.o
-.PHONY : stonew.cpp.o
-
-stonew.i: stonew.cpp.i
-
-.PHONY : stonew.i
-
-# target to preprocess a source file
-stonew.cpp.i:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/stonew.cpp.i
-.PHONY : stonew.cpp.i
-
-stonew.s: stonew.cpp.s
-
-.PHONY : stonew.s
-
-# target to generate assembly for a file
-stonew.cpp.s:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/stonew.cpp.s
-.PHONY : stonew.cpp.s
-
-useston.o: useston.cpp.o
-
-.PHONY : useston.o
+.PHONY : stonewt1.o
 
 # target to build an object file
-useston.cpp.o:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/useston.cpp.o
-.PHONY : useston.cpp.o
+stonewt1.cpp.o:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/stonewt1.cpp.o
+.PHONY : stonewt1.cpp.o
 
-useston.i: useston.cpp.i
+stonewt1.i: stonewt1.cpp.i
 
-.PHONY : useston.i
+.PHONY : stonewt1.i
 
 # target to preprocess a source file
-useston.cpp.i:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/useston.cpp.i
-.PHONY : useston.cpp.i
+stonewt1.cpp.i:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/stonewt1.cpp.i
+.PHONY : stonewt1.cpp.i
 
-useston.s: useston.cpp.s
+stonewt1.s: stonewt1.cpp.s
 
-.PHONY : useston.s
+.PHONY : stonewt1.s
 
 # target to generate assembly for a file
-useston.cpp.s:
-	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/useston.cpp.s
-.PHONY : useston.cpp.s
+stonewt1.cpp.s:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/stonewt1.cpp.s
+.PHONY : stonewt1.cpp.s
+
+useston1.o: useston1.cpp.o
+
+.PHONY : useston1.o
+
+# target to build an object file
+useston1.cpp.o:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/useston1.cpp.o
+.PHONY : useston1.cpp.o
+
+useston1.i: useston1.cpp.i
+
+.PHONY : useston1.i
+
+# target to preprocess a source file
+useston1.cpp.i:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/useston1.cpp.i
+.PHONY : useston1.cpp.i
+
+useston1.s: useston1.cpp.s
+
+.PHONY : useston1.s
+
+# target to generate assembly for a file
+useston1.cpp.s:
+	$(MAKE) -f CMakeFiles/G11.dir/build.make CMakeFiles/G11.dir/useston1.cpp.s
+.PHONY : useston1.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... G11"
-	@echo "... stonew.o"
-	@echo "... stonew.i"
-	@echo "... stonew.s"
-	@echo "... useston.o"
-	@echo "... useston.i"
-	@echo "... useston.s"
+	@echo "... stonewt1.o"
+	@echo "... stonewt1.i"
+	@echo "... stonewt1.s"
+	@echo "... useston1.o"
+	@echo "... useston1.i"
+	@echo "... useston1.s"
 .PHONY : help
 
 

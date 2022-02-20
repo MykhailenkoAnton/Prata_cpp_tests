@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonew.cpp
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt1.cpp
 iostream
 -
-stonewt.h
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt.h
+stonewt1.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt1.h
 
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt1.h
+
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/useston1.cpp
+iostream
+-
+stonewt1.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt1.h
 

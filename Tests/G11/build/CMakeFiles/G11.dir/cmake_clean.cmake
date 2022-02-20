@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/G11.dir/stonew.cpp.o"
-  "CMakeFiles/G11.dir/useston.cpp.o"
+  "CMakeFiles/G11.dir/stonewt1.cpp.o"
+  "CMakeFiles/G11.dir/useston1.cpp.o"
   "G11"
   "G11.pdb"
 )
