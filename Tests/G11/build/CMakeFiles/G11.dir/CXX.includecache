@@ -6,17 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/usevector.cpp
-vect.h
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/vect.h
-
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/vect.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonew.cpp
 iostream
 -
+stonewt.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt.h
 
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/vector.cpp
-cmath
--
-vect.h
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/vect.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt.h
 

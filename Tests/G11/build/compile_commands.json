@@ -1,12 +1,12 @@
 [
 {
   "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/vector.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/vector.cpp",
-  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/vector.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/stonew.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/stonew.cpp",
+  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonew.cpp"
 },
 {
   "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/usevector.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/usevector.cpp",
-  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/usevector.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/useston.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/useston.cpp",
+  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/useston.cpp"
 }
 ]

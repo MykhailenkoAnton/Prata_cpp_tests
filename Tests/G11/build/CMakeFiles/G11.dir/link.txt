@@ -1,1 +1,1 @@
-/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/G11.dir/vector.cpp.o CMakeFiles/G11.dir/usevector.cpp.o  -o G11 
+/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/G11.dir/stonew.cpp.o CMakeFiles/G11.dir/useston.cpp.o  -o G11 
