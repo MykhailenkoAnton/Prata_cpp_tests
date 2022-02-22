@@ -1,12 +1,12 @@
 [
 {
   "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/stonewt1.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt1.cpp",
-  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/stonewt1.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/G11L1.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/G11L1.cpp",
+  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/G11L1.cpp"
 },
 {
   "directory": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/useston1.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/useston1.cpp",
-  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/useston1.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/G11.dir/G11L1run.cpp.o -c /home/anton/Documents/Prata_cpp_tests/Tests/G11/G11L1run.cpp",
+  "file": "/home/anton/Documents/Prata_cpp_tests/Tests/G11/G11L1run.cpp"
 }
 ]
