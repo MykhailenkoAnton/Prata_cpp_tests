@@ -6,23 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/g11l2.cpp
-cmath
--
-g11l2.h
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/g11l2.h
-
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/g11l2.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/g11l3.h
 iostream
 -
 
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/g11l2run.cpp
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/g11l3run.cpp
 iostream
 -
 cstdlib
 -
 ctime
 -
-g11l2.h
-/home/anton/Documents/Prata_cpp_tests/Tests/G11/g11l2.h
+vector
+-
+g11l3.h
+/home/anton/Documents/Prata_cpp_tests/Tests/G11/g11l3.h
 
