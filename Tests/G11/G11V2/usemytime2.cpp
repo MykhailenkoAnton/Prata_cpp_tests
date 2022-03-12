@@ -9,6 +9,7 @@ int main()
     Time diff;
     Time adjusted;
 
+    
     std::cout << "weeding time = "; // время на подготовку
     weeding.Show();
     std::cout << std::endl;
