@@ -124,13 +124,13 @@ VECTOR::Vect VECTOR::Vect::operator*(double n) const
 }
 // Дружественные методы
 // Умножение п на вектор а
-VECTOR::Vect VECTOR::operator*(double n, const Vect & a)
+VECTOR::Vect operator*(double n, const VECTOR::Vect & a)
 {
     return a * n;
 }
 // Отображает прямоугольные координаты, если mode равно RECT,
 // или отображает полярные координаты, если mode равно POL
-std::ostream & VECTOR::operator<<(std::ostream & os, const Vect & v)
+std::ostream & operator<<(std::ostream & os, const VECTOR::Vect & v)
 {
     if (v.mode == VECTOR::Vect::RECT)
     {
