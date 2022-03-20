@@ -2,7 +2,7 @@
 #include "vect.h"
 
 // Вычисляет количество градусов в одном радиане
-const double Rad_to_deg = 45.0 / atan(1.0);
+
 
 // Закрытые методы
 // Вычисляет модуль из х и у
@@ -130,19 +130,23 @@ VECTOR::Vect operator*(double n, const VECTOR::Vect & a)
 }
 // Отображает прямоугольные координаты, если mode равно RECT,
 // или отображает полярные координаты, если mode равно POL
-std::ostream & operator<<(std::ostream & os, const VECTOR::Vect & v)
+VECTOR::Vect::~Vect()
 {
-    if (v.mode == VECTOR::Vect::RECT)
+       // destr;
+}
+std::ostream & VECTOR::operator<<(std::ostream & os, const Vect & v)
+{
+    if (v.mode == Vect::RECT)
     {
         os << " (x,y) = (" << v.x << ", " << v.y << ")";
     }
-    else if (v.mode == VECTOR::Vect::POL)
+    else if (v.mode == Vect::POL)
     {
         os << " (m,a) = (" << v.mag << ", " << v.ang * Rad_to_deg << ")";
     }
     else
     {
-       os << "Vector object mode is invalid"; // недопустимый режим объекта Vector
+    os << "Vector object mode is invalid"; // недопустимый режим объекта Vector
     }
     return os;
 }

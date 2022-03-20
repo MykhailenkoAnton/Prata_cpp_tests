@@ -1,6 +1,8 @@
 #ifndef VECT_H_
 #define VECT_H_
 #include <iostream>
+#include <cmath>
+const double Rad_to_deg = 45.0 / atan(1.0);
 namespace VECTOR
 {
     class Vect
@@ -21,9 +23,9 @@ namespace VECTOR
         void set_y();
     public:
         Vect();
-        ~Vect();
         Vect(double n1, double n2, Mode form = RECT);
         void reset(double n1, double n2, Mode form = RECT);
+        ~Vect();
         double xval() const {return x;} // сообщает значение х
         double yval() const {return y;} // сообщает значение y
         double magval() const {return mag;} // сообщает модуль
