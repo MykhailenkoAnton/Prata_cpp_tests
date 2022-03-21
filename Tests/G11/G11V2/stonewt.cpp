@@ -25,3 +25,12 @@ Stonetw::~Stonetw()
 
 }
 // Отображение веса в стоунах
+void Stonetw::Show_stn() const
+{
+    std::cout << stone << " stone, " << pds_left << " pounds\n";
+}
+// Отображение веса в фунтах
+void Stonetw::Show_lbs() const
+{
+    std::cout << pounds << " pounds\n";
+}
