@@ -37,9 +37,10 @@ int main()
         std::cout << " or\n" << rezult << std::endl;
         std::cout << "Average outward distance per step = "
                 << rezult.magval()/ steps << std::endl; // вывод среднего расстояния на один шаг
-        std::cout << "max outward distance PER SPET = ";
-       
-        std::cout << min;
+
+        std::cout << rezult.magval() * steps << std::endl;
+
+        std::cout << dstep / target << std::endl;
         steps = 0;
         rezult.reset(0.0, 0.0);
         std::cout << "Enter target distance (q to quit) : ";
