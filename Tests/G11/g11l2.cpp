@@ -19,7 +19,6 @@ namespace VECTOR
         {
             x = n1;
             y = n2;
-            
         }
         else if (form == POL)
         {
