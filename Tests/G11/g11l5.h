@@ -4,7 +4,7 @@
 class Stonewt
 {
 public:
-    enum Mode {STN, F_INT, F_DOUBLE};
+    enum Mode {STON, FUNTS};
 private:
     Mode mode;
     enum {Lbs_per_stn = 14}; // фунтов на стоун
@@ -12,8 +12,8 @@ private:
     double pds_left; // дробное число фунтов
     double pounds; // общий вес в фунтах
 public:
-    Stonewt(double lbs, Mode form = STN); // конструктор для значения в фунтах
-    Stonewt(int stn, double lbs, Mode form = STN); // конструктор для значения в стоунах и фунтах
+    Stonewt(double lbs, Mode form = FUNTS); // конструктор для значения в фунтах
+    Stonewt(int stn, double lbs, Mode form = FUNTS); // конструктор для значения в стоунах и фунтах
     ~Stonewt(); // конструктор по умолчанию
     Stonewt();
     friend std::ostream & operator<<(std::ostream & os, const Stonewt & st);

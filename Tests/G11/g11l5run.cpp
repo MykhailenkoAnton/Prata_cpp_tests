@@ -3,10 +3,9 @@
 
 int main()
 {
-    Stonewt ing = 276;
-    Stonewt wolf(235.6);
-    Stonewt taft(21, 8);
-    
-    std::cout << ing << std::endl;
+    Stonewt ing(245);
+    Stonewt ll(21, 3);
+
+    std::cout << ll << std::endl;
     return 0;
 }
