@@ -20,6 +20,8 @@ public:
     Stonewt operator+(const Stonewt & st) const;
     Stonewt operator-(const Stonewt & st) const;
     Stonewt operator*(double n) const;
+    void stone_mode();
+    void pounds_mode();
 };
 
 
