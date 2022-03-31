@@ -20,5 +20,23 @@ int main()
     std::cout << SUM << std::endl;
     SUM.stone_mode();
     std::cout << SUM << std::endl;
+
+    Stonewt dif;
+    dif = ing - ang;
+    std::cout << dif << std::endl;
+    dif.stone_mode();
+    std::cout << dif << std::endl;
+
+    Stonewt GO;
+    GO = ing * 1.5;
+    std::cout << GO << std::endl;
+    GO.stone_mode();
+    std::cout << GO << std::endl;
+
+    Stonewt GOA;
+    GOA = 2.5 * ing;
+    std::cout << GOA << std::endl;
+    GOA.stone_mode();
+    std::cout << GOA << std::endl;
     return 0;
 }

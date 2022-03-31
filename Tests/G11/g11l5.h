@@ -22,6 +22,7 @@ public:
     Stonewt operator*(double n) const;
     void stone_mode();
     void pounds_mode();
+    friend Stonewt operator*(double n, const Stonewt & st);
 };
 
 

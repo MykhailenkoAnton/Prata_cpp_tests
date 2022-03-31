@@ -37,7 +37,7 @@ std::ostream & operator<<(std::ostream & os, const Stonewt & st)
     }
     else if (st.mode == Stonewt::STON)
     {
-        os << "Stone = " << st.stone << "pounds = " << st.pds_left << std::endl;
+        os << "Stone = " << st.stone << ", pounds = " << st.pds_left << std::endl;
     }
     else
     {
@@ -58,6 +58,26 @@ Stonewt Stonewt::operator+(const Stonewt & st) const
     Stonewt sum;
     sum.pounds = st.pounds + this->pounds;
     sum.stone = int (sum.pounds) / Lbs_per_stn;
-    sum.pds_left = 
+    sum.pds_left = int(sum.pounds) % Lbs_per_stn + sum.pounds - int(sum.pounds);
     return sum;
+}
+Stonewt Stonewt::operator-(const Stonewt & st) const
+{
+    Stonewt diff;
+    diff.pounds = this->pounds - st.pounds;
+    diff.stone = int (this->pounds - st.pounds) / Lbs_per_stn;
+    diff.pds_left = int (this->pounds - st.pounds) % Lbs_per_stn;
+    return diff;
+}
+Stonewt Stonewt::operator*(double n) const
+{
+    Stonewt go;
+    go.pounds = this->pounds * n;
+    go.stone = int (this->pounds * n) / Lbs_per_stn;
+    go.pds_left = int (this->pounds * n) % Lbs_per_stn;
+    return go;
+}
+Stonewt operator*(double n, const Stonewt & st)
+{
+    return st * n;
 }
