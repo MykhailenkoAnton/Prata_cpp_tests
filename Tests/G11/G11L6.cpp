@@ -31,3 +31,12 @@ void Stonewt::Show_lbs() const
 {
     std::cout << pounds << " pounds\n";
 }
+bool Stonewt::operator==(const Stonewt & st1)
+{
+    bool MOVE = false;
+    if (this->pounds == st1.pounds)
+    {
+        MOVE = true;
+    }
+    return MOVE;
+}

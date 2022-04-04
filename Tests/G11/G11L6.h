@@ -15,7 +15,7 @@ public:
     ~Stonewt();
     void Show_lbs() const; // отображение веса в формате фунтов
     void Show_str() const; // отображение веса в формате стоунов
-    
+    bool operator==(const Stonewt & st1);
 };
 
 #endif
