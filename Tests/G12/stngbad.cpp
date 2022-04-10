@@ -36,3 +36,23 @@ std::ostream & operator<<(std::ostream & os, const StngBad & st)
     os << st.str;
     return os;
 }
+StngBad::StngBad(const StngBad & st)
+{
+    num_string++;
+    len = st.len;
+    str = new char[len + 1];
+    std::strcpy(str, st.str);
+    std::cout << num_string << ": \"" << str << "\" object created\n"; // для целей отладки
+}
+StngBad & StngBad::operator=(const StngBad & st)
+{
+    if (this == &st)
+    {
+        return *this;
+    }
+    delete [] str;
+    len = st.len;
+    str = new char[len + 1];
+    std::strcpy(str, st.str);
+    return * this;
+}

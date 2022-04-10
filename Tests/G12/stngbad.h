@@ -11,6 +11,8 @@ public:
     StngBad(const char * s);
     StngBad();
     ~StngBad();
+    StngBad(const StngBad & st); // конструктор копирования
+    StngBad & operator=(const StngBad & st); // операция присваивания
     friend std::ostream & operator<<(std::ostream & os, const StngBad & st);
 };
 
