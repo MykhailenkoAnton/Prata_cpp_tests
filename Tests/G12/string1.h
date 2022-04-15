@@ -18,7 +18,20 @@ public:
     int lenght() const {return len;}
 
     // Методы перегруженных операций
-    
+    NString & operator=(const NString &);
+    NString & operator=(const char *);
+    char & operator[](int i);
+    const char & operator[] (int i) const;
+
+    // Дружественные функции перегруженных операций
+    friend bool operator<(const NString & st1, const NString & st2);
+    friend bool operator>(const NString & st1, const NString & st2);
+    friend bool operator==(const NString & st1, const NString & st2);
+    friend std::ostream & operator<<(std::ostream & os, const NString & st);
+    friend std::ostream & operator>>(std::ostream & is, NString & st);
+
+    // Статическая функция
+    static int HowMany();
 };
 
 
