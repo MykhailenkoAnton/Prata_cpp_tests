@@ -28,7 +28,7 @@ public:
     friend bool operator>(const NString & st1, const NString & st2);
     friend bool operator==(const NString & st1, const NString & st2);
     friend std::ostream & operator<<(std::ostream & os, const NString & st);
-    friend std::ostream & operator>>(std::ostream & is, NString & st);
+    friend std::istream & operator>>(std::istream & is, NString & st);
 
     // Статическая функция
     static int HowMany();
