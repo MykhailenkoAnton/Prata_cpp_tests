@@ -28,7 +28,10 @@ int main()
     std::cout << pc2 << ": ";
     pc2->Show();
     JustTesting *pc3, *pc4;
-    pc3 = new(buffer) JustTesting("bad idea", 6);
+
+    // Фиксация ячейки, с которой работает new с размещением
+    pc3 = new(buffer + sizeof(JustTesting))
+    JustTesting("Bad idea", 6);
     pc4 = new JustTesting("Heap2", 10);
     std::cout << "Memory contents:\n"; // вывод содержимого памяти
     std::cout << pc3 << ": ";
@@ -37,6 +40,10 @@ int main()
     pc4->Show();
     delete pc2; // освобождение Heap1
     delete pc4; // освобождение Неар2
+
+    // Явное уничтожение объектов, созданных new с размещением
+    pc3->~JustTesting();
+    pc1->~JustTesting();
     delete [] buffer;
     std::cout << "Done!\n";
     return 0;
