@@ -34,3 +34,23 @@ std::ostream & operator<<(std::ostream & os, const StrngBad & st)
     os << st.str;
     return os;
 }
+StrngBad::StrngBad(const StrngBad & st)
+{
+    num_string++; // обновление статического члена
+    len = st.len; // та же самая длина
+    str = new char[len + 1]; // выделение памяти
+    strcpy(str, st.str); // копирование строки в новое место
+    std::cout << num_string << " : \"" << str << "\" object created\n"; // для целей отладки
+}
+StrngBad & StrngBad::operator=(const StrngBad & st)
+{
+    if (this == &st) // присваивание объекта самому себе
+    {
+        return *this; // все готово
+    }
+    delete [] str; // освобождение старой строки
+    len = st.len; 
+    str = new char[len + 1]; // выделение памяти для новой строки
+    strcpy(str, st.str); // копирование строки
+    return *this; // возврат ссылки на вызывающий объект
+}
