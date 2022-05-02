@@ -126,7 +126,7 @@ NString & NString::operator+(const NString & s)
 {
     char * sqs;
     strcpy(sqs, this->str);
-    delete [] str;
+    // delete [] str;
     int a = strlen(sqs);
     int b = strlen(s.str);
     len = a + b;
