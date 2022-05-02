@@ -124,15 +124,16 @@ int NString::has(char n)
 }
 NString & NString::operator+(const NString & s)
 {
-    char * sqs;
+    char * sqs = new char;
     strcpy(sqs, this->str);
-    // delete [] str;
+    delete [] str;
     int a = strlen(sqs);
     int b = strlen(s.str);
     len = a + b;
     str = new char[len + 1];
     strcpy(str, sqs);
     strcat(str, s.str);
+    delete sqs;
     return *this;
 }
 NString operator+(const char * s, const NString & st)
