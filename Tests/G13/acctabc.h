@@ -53,5 +53,4 @@ public:
     void ResetOwes() {owesBank = 0;}
 };
 
-
 #endif
