@@ -17,6 +17,6 @@ int main()
     hasDMA map2;
     map2 = map;
     std::cout << "Result of hasDMA assignment:\n"; // результат присваивания hasDMA
-    std::cout << map2 << std::endl;
+    std::cout << map2 << std::endl; 
     return 0;
 }
