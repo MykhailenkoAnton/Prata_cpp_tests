@@ -98,6 +98,7 @@ hasDMA::hasDMA(const char * s, const char * l, int r) : baseALL(l, r)
 {
     style = new char[strlen(s) + 1];
     strcpy(style, s);
+    std::cout << style << std::endl;
 }
 hasDMA::hasDMA(const char * s, const baseALL & ba) : baseALL(ba)
 {
