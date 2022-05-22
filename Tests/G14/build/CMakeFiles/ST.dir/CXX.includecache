@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/home/Documents/Prata_cpp_tests/Tests/G14/RunStack1.cpp
+iostream
+-
+cstdlib
+-
+ctime
+-
+stack1.h
+/home/home/Documents/Prata_cpp_tests/Tests/G14/stack1.h
+
+/home/home/Documents/Prata_cpp_tests/Tests/G14/stack1.h
+

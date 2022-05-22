@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/home/Documents/Prata_cpp_tests/Tests/G14/arrayh.h
+iostream
+-
+cstdlib
+-
+
+/home/home/Documents/Prata_cpp_tests/Tests/G14/arraytp.cpp
+iostream
+-
+arrayh.h
+/home/home/Documents/Prata_cpp_tests/Tests/G14/arrayh.h
+
