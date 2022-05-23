@@ -26,6 +26,7 @@ MY2 & Pair<MY1,MY2>::second()
     return b;
 }
 
+
 int main() 
 {
     Pair<std::string, int> rating[4] = 
