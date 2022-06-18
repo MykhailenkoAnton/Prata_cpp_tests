@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/rating.dir/pairs.cpp.o  -o rating 

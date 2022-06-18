@@ -1,7 +1,13 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G14/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/rating.dir/pairs.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14/pairs.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14/pairs.cpp"
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/student.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14/student.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14/student.cpp"
+},
+
+{
+  "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G14/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/use_student.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14/use_student.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14/use_student.cpp"
 }
 ]
