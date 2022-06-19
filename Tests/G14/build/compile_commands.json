@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G14/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/stack.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14/stack.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14/stack.cpp"
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/stack1.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14/stack1.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14/stack1.cpp"
 }
 ]
