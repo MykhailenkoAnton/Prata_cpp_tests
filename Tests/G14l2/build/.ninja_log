@@ -1,0 +1,8 @@
+# ninja log v5
+0	12	1655895164301868608	CMakeFiles/main.dir/use_wine.cpp.o	ab4095a1bc9ec434
+0	12	1655895164301868608	CMakeFiles/main.dir/wine.cpp.o	e7f7969b735054
+1	400	1655895836329210009	CMakeFiles/main.dir/use_wine.cpp.o	ab4095a1bc9ec434
+1	27	1655896901555014760	CMakeFiles/main.dir/wine.cpp.o	e7f7969b735054
+1	287	1655901806080275733	CMakeFiles/main.dir/wine.cpp.o	e7f7969b735054
+1	295	1655901841464874789	CMakeFiles/main.dir/wine.cpp.o	e7f7969b735054
+0	14	1655902109301378310	CMakeFiles/main.dir/wine.cpp.o	e7f7969b735054
