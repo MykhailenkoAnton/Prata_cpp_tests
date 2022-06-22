@@ -1,0 +1,3 @@
+/home/home/Documents/Prata_cpp_tests/Tests/G14l1/build/CMakeFiles/rebuild_cache.dir
+/home/home/Documents/Prata_cpp_tests/Tests/G14l1/build/CMakeFiles/edit_cache.dir
+/home/home/Documents/Prata_cpp_tests/Tests/G14l1/build/CMakeFiles/main.dir

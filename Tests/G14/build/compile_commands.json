@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G14/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/Array.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14/Array.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14/Array.cpp"
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/frnd.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14/frnd.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14/frnd.cpp"
 }
 ]
