@@ -17,22 +17,17 @@ public:
     Type2 second() const { return b; }
     Pair(const Type1 & aval, const Type2 & bval) : a(aval), b(bval) {}
     Pair() {}
-    Pair<Type1, Type2> & operator=(Pair<Type1, Type2> & P); 
 };
-template<typename Type1, typename Type2>
-Pair<Type1, Type2> & Pair<Type1, Type2>::operator=(Pair<Type1, Type2> & P)
-{
-    a = P.a;
-    b = P.b;
-    return *this;
-}
 
-template<typename Type1, typename Type2>
-class Wine : private std::string, private Pair<Type1, Type2>
+
+
+typedef std::valarray<int> ArrInt;
+typedef Pair<ArrInt, ArrInt> PairArr;
+
+
+class Wine : private std::string, private PairArr
 {
 private:
-    typedef std::valarray<int> ArrInt;
-    typedef Pair<Type1, Type2> PairArr;
     int years;
 public:
     Wine() : years(0), std::string(""), PairArr() {}
@@ -47,11 +42,10 @@ public:
     Wine(const char * l, int y)
     : years(y), std::string(l), PairArr(ArrInt(y), ArrInt(y)) {}
 
-    
-    // void GetBottles();
-    // std::string & Label();
-    // int Sum();
-    // void Show() const;
+    void GetBottles();
+    std::string & Label();
+    int Sum();
+    void Show() const;
 };
 
 
