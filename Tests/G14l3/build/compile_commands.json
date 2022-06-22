@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G14l3/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/Worker.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14l3/Worker.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14l3/Worker.cpp"
+},
+
+{
+  "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G14l3/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/use_worker.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14l3/use_worker.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14l3/use_worker.cpp"
+}
+]
