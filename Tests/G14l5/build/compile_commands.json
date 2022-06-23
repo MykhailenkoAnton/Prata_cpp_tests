@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G14l5/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/emp.dir/emp.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14l5/emp.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14l5/emp.cpp"
+},
+
+{
+  "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G14l5/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/emp.dir/useemp.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G14l5/useemp.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G14l5/useemp.cpp"
+}
+]
