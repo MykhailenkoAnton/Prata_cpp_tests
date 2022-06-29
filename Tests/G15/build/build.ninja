@@ -61,8 +61,8 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_er: phony || CMakeFiles/er.dir
 
-build CMakeFiles/er.dir/error1.cpp.o: CXX_COMPILER__er ../error1.cpp || cmake_object_order_depends_target_er
-  DEP_FILE = CMakeFiles/er.dir/error1.cpp.o.d
+build CMakeFiles/er.dir/constcast.cpp.o: CXX_COMPILER__er ../constcast.cpp || cmake_object_order_depends_target_er
+  DEP_FILE = CMakeFiles/er.dir/constcast.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/er.dir
   OBJECT_FILE_DIR = CMakeFiles/er.dir
@@ -75,7 +75,7 @@ build CMakeFiles/er.dir/error1.cpp.o: CXX_COMPILER__er ../error1.cpp || cmake_ob
 #############################################
 # Link the executable er
 
-build er: CXX_EXECUTABLE_LINKER__er CMakeFiles/er.dir/error1.cpp.o
+build er: CXX_EXECUTABLE_LINKER__er CMakeFiles/er.dir/constcast.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/er.dir
   POST_BUILD = :

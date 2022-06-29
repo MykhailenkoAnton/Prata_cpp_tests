@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G15/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/er.dir/error1.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G15/error1.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G15/error1.cpp"
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/er.dir/constcast.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G15/constcast.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G15/constcast.cpp"
 }
 ]

@@ -1,15 +1,15 @@
 #include <iostream>
 
-class bad_mean
+class bad_hmean
 {
 private:
     double v1;
     double v2;
 public:
-    bad_mean(double a = 0, double b = 0) : v1(a), v2(b) {}
+    bad_hmean(double a = 0, double b = 0) : v1(a), v2(b) {}
     void mesq();
 };
-inline void bad_mean::mesq()
+inline void bad_hmean::mesq()
 {
     std::cout << "hmean(" << v1 << ", " << v2 <<") : "
                 << "invalid arguments: a = -b\n"; // неверные аргументы

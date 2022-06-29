@@ -22,7 +22,7 @@ int main()
             
             std::cout << "Enter next set of numbers <q to quit>: "; // ввод следующей пары чисел
         }
-        catch(bad_mean & bm)
+        catch(bad_hmean & bm)
         {
             bm.mesq();
             std::cout << "Try again.\n"; // необходимо повторить попытку
@@ -45,7 +45,7 @@ double hmean(double a, double b)
 {
     if (a == -b)
     {
-        throw bad_mean(a, b);
+        throw bad_hmean(a, b);
     }
     return 2.0 * a * b / (a + b);
 }
