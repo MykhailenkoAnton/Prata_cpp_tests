@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: g15l1
+# Project: g15l2
 # Configuration: Debug
 # =============================================================================
 
@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/home/Documents/Prata_cpp_tests/Tests/G15l1/build && /usr/bin/cmake -S/home/home/Documents/Prata_cpp_tests/Tests/G15l1 -B/home/home/Documents/Prata_cpp_tests/Tests/G15l1/build
+  COMMAND = cd /home/home/Documents/Prata_cpp_tests/Tests/G15l2/build && /usr/bin/cmake -S/home/home/Documents/Prata_cpp_tests/Tests/G15l2 -B/home/home/Documents/Prata_cpp_tests/Tests/G15l2/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -46,48 +46,42 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/home/Documents/Prata_cpp_tests/Tests/G15l1/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/home/Documents/Prata_cpp_tests/Tests/G15l2/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target tv
+# Object build statements for EXECUTABLE target l2
 
 
 #############################################
-# Order-only phony target for tv
+# Order-only phony target for l2
 
-build cmake_object_order_depends_target_tv: phony || CMakeFiles/tv.dir
+build cmake_object_order_depends_target_l2: phony || CMakeFiles/l2.dir
 
-build CMakeFiles/tv.dir/tv.cpp.o: CXX_COMPILER__tv ../tv.cpp || cmake_object_order_depends_target_tv
-  DEP_FILE = CMakeFiles/tv.dir/tv.cpp.o.d
+build CMakeFiles/l2.dir/main.cpp.o: CXX_COMPILER__l2 ../main.cpp || cmake_object_order_depends_target_l2
+  DEP_FILE = CMakeFiles/l2.dir/main.cpp.o.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/tv.dir
-  OBJECT_FILE_DIR = CMakeFiles/tv.dir
-
-build CMakeFiles/tv.dir/use_tv.cpp.o: CXX_COMPILER__tv ../use_tv.cpp || cmake_object_order_depends_target_tv
-  DEP_FILE = CMakeFiles/tv.dir/use_tv.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/tv.dir
-  OBJECT_FILE_DIR = CMakeFiles/tv.dir
+  OBJECT_DIR = CMakeFiles/l2.dir
+  OBJECT_FILE_DIR = CMakeFiles/l2.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target tv
+# Link build statements for EXECUTABLE target l2
 
 
 #############################################
-# Link the executable tv
+# Link the executable l2
 
-build tv: CXX_EXECUTABLE_LINKER__tv CMakeFiles/tv.dir/tv.cpp.o CMakeFiles/tv.dir/use_tv.cpp.o
+build l2: CXX_EXECUTABLE_LINKER__l2 CMakeFiles/l2.dir/main.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/tv.dir
+  OBJECT_DIR = CMakeFiles/l2.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = tv
-  TARGET_PDB = tv.dbg
+  TARGET_FILE = l2
+  TARGET_PDB = l2.dbg
 
 # =============================================================================
 # Target aliases.
@@ -98,9 +92,9 @@ build tv: CXX_EXECUTABLE_LINKER__tv CMakeFiles/tv.dir/tv.cpp.o CMakeFiles/tv.dir
 # =============================================================================
 
 #############################################
-# Folder: /home/home/Documents/Prata_cpp_tests/Tests/G15l1/build
+# Folder: /home/home/Documents/Prata_cpp_tests/Tests/G15l2/build
 
-build all: phony tv
+build all: phony l2
 
 # =============================================================================
 # Built-in targets
