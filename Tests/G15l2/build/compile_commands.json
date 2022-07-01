@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G15l2/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/l2.dir/main.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G15l2/main.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G15l2/main.cpp"
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/g15l2.dir/g15l2.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G15l2/g15l2.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G15l2/g15l2.cpp"
 }
 ]

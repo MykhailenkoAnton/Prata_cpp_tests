@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "l2"
+			"path" : "g15l2"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +45,7 @@
 			]
 		}
 	],
-	"id" : "l2::@6890427a1f51a3e7e1df",
+	"id" : "g15l2::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -61,8 +61,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "l2",
-	"nameOnDisk" : "l2",
+	"name" : "g15l2",
+	"nameOnDisk" : "g15l2",
 	"paths" : 
 	{
 		"build" : ".",
@@ -83,7 +83,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "g15l2.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

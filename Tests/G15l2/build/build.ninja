@@ -53,35 +53,35 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target l2
+# Object build statements for EXECUTABLE target g15l2
 
 
 #############################################
-# Order-only phony target for l2
+# Order-only phony target for g15l2
 
-build cmake_object_order_depends_target_l2: phony || CMakeFiles/l2.dir
+build cmake_object_order_depends_target_g15l2: phony || CMakeFiles/g15l2.dir
 
-build CMakeFiles/l2.dir/main.cpp.o: CXX_COMPILER__l2 ../main.cpp || cmake_object_order_depends_target_l2
-  DEP_FILE = CMakeFiles/l2.dir/main.cpp.o.d
+build CMakeFiles/g15l2.dir/g15l2.cpp.o: CXX_COMPILER__g15l2 ../g15l2.cpp || cmake_object_order_depends_target_g15l2
+  DEP_FILE = CMakeFiles/g15l2.dir/g15l2.cpp.o.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/l2.dir
-  OBJECT_FILE_DIR = CMakeFiles/l2.dir
+  OBJECT_DIR = CMakeFiles/g15l2.dir
+  OBJECT_FILE_DIR = CMakeFiles/g15l2.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target l2
+# Link build statements for EXECUTABLE target g15l2
 
 
 #############################################
-# Link the executable l2
+# Link the executable g15l2
 
-build l2: CXX_EXECUTABLE_LINKER__l2 CMakeFiles/l2.dir/main.cpp.o
+build g15l2: CXX_EXECUTABLE_LINKER__g15l2 CMakeFiles/g15l2.dir/g15l2.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/l2.dir
+  OBJECT_DIR = CMakeFiles/g15l2.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = l2
-  TARGET_PDB = l2.dbg
+  TARGET_FILE = g15l2
+  TARGET_PDB = g15l2.dbg
 
 # =============================================================================
 # Target aliases.
@@ -94,7 +94,7 @@ build l2: CXX_EXECUTABLE_LINKER__l2 CMakeFiles/l2.dir/main.cpp.o
 #############################################
 # Folder: /home/home/Documents/Prata_cpp_tests/Tests/G15l2/build
 
-build all: phony l2
+build all: phony g15l2
 
 # =============================================================================
 # Built-in targets
