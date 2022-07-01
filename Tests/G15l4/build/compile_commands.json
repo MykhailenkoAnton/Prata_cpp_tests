@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G15l4/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/l4.dir/sales.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G15l4/sales.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G15l4/sales.cpp"
+},
+
+{
+  "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G15l4/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/l4.dir/usesales.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G15l4/usesales.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G15l4/usesales.cpp"
+}
+]
