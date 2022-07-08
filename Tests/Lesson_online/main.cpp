@@ -123,26 +123,31 @@
 //     return -1;
 // }
 
-class A
-{
-private:
-    /* data */
-public:
-    A(/* args */);
-    ~A();
-};
+// class A
+// {
+// private:
+//     /* data */
+// public:
+//     A(/* args */);
+//     ~A();
+// };
 
-A::A(/* args */)
-{
-}
+// A::A(/* args */)
+// {
+// }
 
-A::~A()
-{
-}
+// A::~A()
+// {
+// }
 
 
-int main()
+int main(int argc, const char * argv[])
 {
-    std::cout << sizeof(A) << std::endl;
+    std::cout << argc << std::endl;
+    for (int i = 0; i < argc; i++)
+    {
+        std::cout << "argc[" << i << "] = " << argv[i] << std::endl;
+    }
+    
     return 0;
 }

@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G16/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/g16.dir/hangman.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G16/hangman.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G16/hangman.cpp"
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/g16.dir/fundap.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G16/fundap.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G16/fundap.cpp"
 }
 ]
