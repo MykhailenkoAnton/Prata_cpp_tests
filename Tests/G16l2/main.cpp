@@ -26,16 +26,16 @@ int main()
 
 bool isPolindrom(const std::string & s)
 {
-    char ch;
-    int i;
+
     auto start = s.begin();
     std::string s1;
-    for (start, i = 0; start != s.end(); start++, i++)
+    for (start; start != s.end(); start++)
     {
         if (isalpha(*start))
         {
-            ch = tolower(s[i]);
-            s1.push_back(ch);
+            auto ch = tolower(*start);
+            // s1.push_back(ch);
+            s1 += *start;
         }
         else
         {
@@ -45,17 +45,14 @@ bool isPolindrom(const std::string & s)
     
     start = s1.begin();
     auto end = s1.end() - 1;
-    for (start; start <= end; start++, end--)
+    while (start <= end)
     {
         if (*start != *end)
         {
             return false;
         }
-        else if (start == end)
-        {
-            return true;
-        }
-        
+        start++;
+        end--;
     }
     
     return true;
