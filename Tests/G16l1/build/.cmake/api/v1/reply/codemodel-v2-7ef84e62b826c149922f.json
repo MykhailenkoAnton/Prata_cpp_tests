@@ -26,7 +26,7 @@
 					[
 						0
 					],
-					"name" : "g16",
+					"name" : "l1",
 					"targetIndexes" : 
 					[
 						0
@@ -37,9 +37,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "g16::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-g16-Debug-2bc06fe0e9d1e1a3c581.json",
-					"name" : "g16",
+					"id" : "l1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l1-Debug-c940b7f3bdc232cfa624.json",
+					"name" : "l1",
 					"projectIndex" : 0
 				}
 			]
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/home/Documents/Prata_cpp_tests/Tests/G16/build",
-		"source" : "/home/home/Documents/Prata_cpp_tests/Tests/G16"
+		"build" : "/home/home/Documents/Prata_cpp_tests/Tests/G16l1/build",
+		"source" : "/home/home/Documents/Prata_cpp_tests/Tests/G16l1"
 	},
 	"version" : 
 	{

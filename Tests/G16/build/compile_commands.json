@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G16/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/g16.dir/fundap.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G16/fundap.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G16/fundap.cpp"
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/g16.dir/in_list.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G16/in_list.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G16/in_list.cpp"
 }
 ]
