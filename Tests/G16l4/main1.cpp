@@ -10,10 +10,12 @@ int main()
 	{
 		MyArr[i] = rand() % 5 + 1;
 	}
-	int last = reduce(MyArr, SIZE);
+	
+	int last = reduce(MyArr, 5);
 	std::cout << "Arr has " << last << " elements\n";
 	return 0;
 }
+
 
 int reduce(long ar[], int n)
 {
@@ -28,3 +30,5 @@ int reduce(long ar[], int n)
 
 	return num;
 }
+
+

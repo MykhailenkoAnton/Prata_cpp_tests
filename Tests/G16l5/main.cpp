@@ -29,8 +29,6 @@ int main()
     // std::cout << "Now arr1 is " << last_long << " elements!\n";
 
 
-    std::string arr2[SIZE] = {"rako", "rako", "tako", "tako", "east", "west", "lol", "lol", "heo", "lol"};
-
     // for (int i = 0; i < SIZE; i++)
     // {
     //     int j = 0;
@@ -51,6 +49,9 @@ int main()
     //     }
     //     arr2[i] = newword;
     // }
+
+
+    std::string arr2[SIZE] = {"rako", "rako", "tako", "tako", "east", "west", "lol", "lol", "heo", "lol"};
     
     for (int i = 0; i < SIZE; i++)
     {
