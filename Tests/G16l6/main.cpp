@@ -52,7 +52,7 @@ int main()
         }
         if(wait_time <= 0 && !line.empty())
         {
-            line.front(); // обслуживание следующего клиента
+            line.pop(); // обслуживание следующего клиента
             wait_time = temp.ptime();
             line_wait += cycle - temp.when();
             served++;
