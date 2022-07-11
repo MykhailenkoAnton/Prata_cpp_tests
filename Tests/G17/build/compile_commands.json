@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G17/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/g17.dir/fill.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G17/fill.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G17/fill.cpp"
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/g17.dir/precise.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G17/precise.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G17/precise.cpp"
 }
 ]
