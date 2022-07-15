@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: g17
+# Project: l3
 # Configuration: Debug
 # =============================================================================
 
@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/home/Documents/Prata_cpp_tests/Tests/G17/build && /usr/bin/cmake -S/home/home/Documents/Prata_cpp_tests/Tests/G17 -B/home/home/Documents/Prata_cpp_tests/Tests/G17/build
+  COMMAND = cd /home/home/Documents/Prata_cpp_tests/Tests/G17l3/build && /usr/bin/cmake -S/home/home/Documents/Prata_cpp_tests/Tests/G17l3 -B/home/home/Documents/Prata_cpp_tests/Tests/G17l3/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -46,42 +46,42 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/home/Documents/Prata_cpp_tests/Tests/G17/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/home/Documents/Prata_cpp_tests/Tests/G17l3/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target g17
+# Object build statements for EXECUTABLE target l3
 
 
 #############################################
-# Order-only phony target for g17
+# Order-only phony target for l3
 
-build cmake_object_order_depends_target_g17: phony || CMakeFiles/g17.dir
+build cmake_object_order_depends_target_l3: phony || CMakeFiles/l3.dir
 
-build CMakeFiles/g17.dir/test.cpp.o: CXX_COMPILER__g17 ../test.cpp || cmake_object_order_depends_target_g17
-  DEP_FILE = CMakeFiles/g17.dir/test.cpp.o.d
+build CMakeFiles/l3.dir/main.cpp.o: CXX_COMPILER__l3 ../main.cpp || cmake_object_order_depends_target_l3
+  DEP_FILE = CMakeFiles/l3.dir/main.cpp.o.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/g17.dir
-  OBJECT_FILE_DIR = CMakeFiles/g17.dir
+  OBJECT_DIR = CMakeFiles/l3.dir
+  OBJECT_FILE_DIR = CMakeFiles/l3.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target g17
+# Link build statements for EXECUTABLE target l3
 
 
 #############################################
-# Link the executable g17
+# Link the executable l3
 
-build g17: CXX_EXECUTABLE_LINKER__g17 CMakeFiles/g17.dir/test.cpp.o
+build l3: CXX_EXECUTABLE_LINKER__l3 CMakeFiles/l3.dir/main.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/g17.dir
+  OBJECT_DIR = CMakeFiles/l3.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = g17
-  TARGET_PDB = g17.dbg
+  TARGET_FILE = l3
+  TARGET_PDB = l3.dbg
 
 # =============================================================================
 # Target aliases.
@@ -92,9 +92,9 @@ build g17: CXX_EXECUTABLE_LINKER__g17 CMakeFiles/g17.dir/test.cpp.o
 # =============================================================================
 
 #############################################
-# Folder: /home/home/Documents/Prata_cpp_tests/Tests/G17/build
+# Folder: /home/home/Documents/Prata_cpp_tests/Tests/G17l3/build
 
-build all: phony g17
+build all: phony l3
 
 # =============================================================================
 # Built-in targets

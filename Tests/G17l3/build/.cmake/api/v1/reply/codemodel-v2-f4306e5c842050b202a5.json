@@ -26,7 +26,7 @@
 					[
 						0
 					],
-					"name" : "g17",
+					"name" : "l3",
 					"targetIndexes" : 
 					[
 						0
@@ -37,9 +37,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "g17::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-g17-Debug-401aadd0caaa8af35f64.json",
-					"name" : "g17",
+					"id" : "l3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l3-Debug-ffe54a74f95d5c09c675.json",
+					"name" : "l3",
 					"projectIndex" : 0
 				}
 			]
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/home/Documents/Prata_cpp_tests/Tests/G17/build",
-		"source" : "/home/home/Documents/Prata_cpp_tests/Tests/G17"
+		"build" : "/home/home/Documents/Prata_cpp_tests/Tests/G17l3/build",
+		"source" : "/home/home/Documents/Prata_cpp_tests/Tests/G17l3"
 	},
 	"version" : 
 	{
