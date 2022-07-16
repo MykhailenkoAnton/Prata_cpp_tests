@@ -57,7 +57,5 @@ int main()
             std::cout << "cant open file\n";
         }
     }
-    
-    
     return 0;
 }
