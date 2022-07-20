@@ -1,93 +1,146 @@
-#include <iostream>
-#include <string>
+// #include <iostream>
+// #include <string>
 
-enum class proffesion
-    {
-        worker,
-        manager,
-        director
-    };
-class Emploe
-{
-private:
-    std::string name;
-    proffesion prof;
+// enum class proffesion
+//     {
+//         worker,
+//         manager,
+//         director
+//     };
+// class Emploe
+// {
+// private:
+//     std::string name;
+//     proffesion prof;
    
-public:
-    Emploe() {}
-    Emploe(const std::string & s, proffesion pf) : name(s), prof(pf)  {}
-    bool operator<(const Emploe & e)
-    {
-        // if (this->prof < e.prof)
-        // {
-        //     return true;
-        // }
-        // else
-        // {
-        //     return false;
-        // }
-        return (this->prof < e.prof);
-    }
-    void Show() const
-    {
-        std::cout << "Name: " << name << ", ";
-        if(prof == proffesion::worker)
-        {
-            std::cout << "Worker!";
-        }
-        else if (prof == proffesion::manager)
-        {
-             std::cout << "Manager!";
-        }
-        else
-        {
-            std::cout << "Director!";
-        }
-    }
-};
+// public:
+//     Emploe() {}
+//     Emploe(const std::string & s, proffesion pf) : name(s), prof(pf)  {}
+//     bool operator<(const Emploe & e)
+//     {
+//         return (this->prof < e.prof);
+//     }
+//     void Show() const
+//     {
+//         std::cout << "Name: " << name << ", ";
+//         if(prof == proffesion::worker)
+//         {
+//             std::cout << "Worker!";
+//         }
+//         else if (prof == proffesion::manager)
+//         {
+//              std::cout << "Manager!";
+//         }
+//         else
+//         {
+//             std::cout << "Director!";
+//         }
+//     }
+// };
 
 
 
 
-const int SIZE = 10;
-void BubbleSort(Emploe * arr, int size);
-void Show(int * arr, int size);
-int main(){
+// const int SIZE = 10;
+// void BubbleSort(Emploe * arr, int size);
+// void Show(int * arr, int size);
+// int main(){
     
-   //int arr[SIZE] = {3, 5, 2, 1, 13, 12, 2, 1, 1, 20};   
+//    //int arr[SIZE] = {3, 5, 2, 1, 13, 12, 2, 1, 1, 20};   
     
-    //Show(arr, SIZE);
-    //Emploe w1("Harry", proffesion::manager);
-    //w1.Show();
+//     //Show(arr, SIZE);
+//     //Emploe w1("Harry", proffesion::manager);
+//     //w1.Show();
      
-    //Emploe W[4] = { ("Harry", proffesion::manager), ("Bob", proffesion::director), ("Tanos", proffesion::manager), ("Anton", proffesion::worker)};
-    Emploe W[4];
-    W[0] = Emploe("Harry", proffesion::manager);
-    W[1] = Emploe("Bob", proffesion::director);
-    W[2] = Emploe("Tanos", proffesion::manager);
-    W[3] = Emploe("Anton", proffesion::worker);
-    BubbleSort(W, 4);
-    for(int i = 0; i < 4; i++)
-    {
-        W[i].Show();
-        std::cout << std::endl;
-    }
-    return 0;
-}
+//     //Emploe W[4] = { ("Harry", proffesion::manager), ("Bob", proffesion::director), ("Tanos", proffesion::manager), ("Anton", proffesion::worker)};
+//     Emploe W[4];
+//     W[0] = Emploe("Harry", proffesion::manager);
+//     W[1] = Emploe("Bob", proffesion::director);
+//     W[2] = Emploe("Tanos", proffesion::manager);
+//     W[3] = Emploe("Anton", proffesion::worker);
+//     BubbleSort(W, 4);
+//     for(int i = 0; i < 4; i++)
+//     {
+//         W[i].Show();
+//         std::cout << std::endl;
+//     }
+//     return 0;
+// }
 
-void BubbleSort(Emploe * arr, int size)
-{
-    for(int i = 0; i < size; i++)
-    {
-        for(int j = size - 1; j > i; j--)
-        {
-            if(arr[j] < arr[j - 1])
-               {
-                   Emploe temp = arr[j];
-                   arr[j] = arr[j - 1];
-                   arr[j - 1] = temp;
-               }
-        }
-    }
+// void BubbleSort(Emploe * arr, int size)
+// {
+//     for(int i = 0; i < size; i++)
+//     {
+//         for(int j = size - 1; j > i; j--)
+//         {
+//             if(arr[j] < arr[j - 1])
+//                {
+//                    Emploe temp = arr[j];
+//                    arr[j] = arr[j - 1];
+//                    arr[j - 1] = temp;
+//                }
+//         }
+//     }
     
-}
+// }
+
+// #include <iostream>
+// #include <memory>
+// class A
+// {
+// public:
+//     A()
+//     {
+//         std::cout << "Contructor!\n";
+//     }
+//     ~A() {
+//         std::cout << "Destructor!\n";
+//     }
+// };
+
+// int main()
+// {
+//         try
+//         {
+//             std::unique_ptr<A> ptr(new A());
+//             throw 1;
+//         }
+//         catch(int)
+//         {
+            
+//         }
+        
+//     return 0;
+// }
+
+
+
+// #include <iostream>
+// #include <memory>
+// class A
+
+// {
+// public:
+//     void Show(){std::cout << "A\n";}
+//     A() {std::cout << "Cons\n";}
+//     ~A() {std::cout << "Des\n";}
+// };
+
+// void Deleter(int * a)
+// {
+//     std::cout << "Deleter\n";
+//     delete a;
+// }
+
+// int main()
+// {
+//     {
+//         std::shared_ptr<int> ptr{new int{}, Deleter};
+//         // ptr->Show 
+//         std::shared_ptr<int>::element_type var;
+//         std::cout << std::endl;
+//         var = 10;
+//         std::cout << var;
+//     }
+//     return 0;
+// }
