@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/G18/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/g18.dir/stdmove.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G18/stdmove.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G18/stdmove.cpp"
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/g18.dir/lamda1.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/G18/lamda1.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/G18/lamda1.cpp"
 }
 ]
