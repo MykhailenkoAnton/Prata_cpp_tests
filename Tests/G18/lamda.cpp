@@ -52,4 +52,5 @@ int main()
     count13 = std::count_if(numbers1.begin(), numbers1.end(), mod13);
     std::cout << "Count of numbers divisible by 13: " << count13 << '\n'; // количество чисел, кратных 13
     return 0;
+
 }

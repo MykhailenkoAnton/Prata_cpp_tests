@@ -61,8 +61,8 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_home: phony || CMakeFiles/home.dir
 
-build CMakeFiles/home.dir/main.cpp.o: CXX_COMPILER__home ../main.cpp || cmake_object_order_depends_target_home
-  DEP_FILE = CMakeFiles/home.dir/main.cpp.o.d
+build CMakeFiles/home.dir/a.cpp.o: CXX_COMPILER__home ../a.cpp || cmake_object_order_depends_target_home
+  DEP_FILE = CMakeFiles/home.dir/a.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/home.dir
   OBJECT_FILE_DIR = CMakeFiles/home.dir
@@ -75,7 +75,7 @@ build CMakeFiles/home.dir/main.cpp.o: CXX_COMPILER__home ../main.cpp || cmake_ob
 #############################################
 # Link the executable home
 
-build home: CXX_EXECUTABLE_LINKER__home CMakeFiles/home.dir/main.cpp.o
+build home: CXX_EXECUTABLE_LINKER__home CMakeFiles/home.dir/a.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/home.dir
   POST_BUILD = :
