@@ -14,6 +14,41 @@ STL и итераторы подробнее
 #include <iostream>
 const int SIZE = 5;
 
+// быстрая сортировка
+void QuickSort(int arr[], int first, int last)
+{
+    int middle = arr[(first + last) / 2];
+    int i = first;
+    int j = last;
+    do
+    {
+        while (arr[i] < middle)
+        {
+            i++;
+        }
+        while (arr[j] > middle)
+        {
+            j--;
+        }
+        if (i <= j)
+        {
+            std::swap(arr[i], arr[j]);
+            i++;
+            j--;
+        }
+    } while (i <= j);
+
+    if (j > first)
+    {
+        QuickSort(arr, first, j);
+    }
+    if (i < last)
+    {
+        QuickSort(arr, i, last);
+    }
+    
+}
+
 //пузырьковая
 int main(){
     
@@ -288,10 +323,35 @@ Quick Sort
 
 Кубическая сложность О(n ^ 3)
 пример: цикл в цикле в цикле с одинаковым размером i and j, иначе скорость будет О(a * b * c)
+======================================================================
+ADT Абстрактные типы данных: 
+Односвязный список, Двухсвязный список, Стек, Очеред, Бинарное дерево
+
+Односвязный список:
+
+
 
 
 
 ======================================================================
+STL
+контейнер = шаблон класса который вмещает в себя любые данные одного типа и предоставляет
+операции для манипуляции этими данными
+Алгоритм (в контексте STL) это функции которая работает с контейнером через итератор
+потому что итераторы предоставляют абстракцию по отношению ко всем контейнерам 
+
+контейнеры:
+последовательные (Sequence) = (vector, array, list, deque, forward_list) 
+асоциативные (associative) = (set, map, multiset, multimap) 
+неупорядоченные (unordered associative) = (unordered_set, unordered_map, unordered_multiset, unordered_unordered)
+
+Адапторы контейнеров (Adaptors) = (stack, queue, priority_queue)
+
+vector:
+Вставка insert O(1) push_back. another O(n) (амортизированая скорость)
+Доступ О(n)
+Удаление O(1) pщз_back. another O(n) (амортизированая скорость)
+поиск О(n)
 ======================================================================
 
 
