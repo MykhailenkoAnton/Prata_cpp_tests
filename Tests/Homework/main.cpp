@@ -38,9 +38,6 @@
 //     }
 // };
 
-
-
-
 // const int SIZE = 10;
 // void BubbleSort(Emploe * arr, int size);
 // void Show(int * arr, int size);
@@ -112,7 +109,6 @@
         
 //     return 0;
 // }
-
 
 
 // #include <iostream>
