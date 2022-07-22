@@ -1,7 +1,6 @@
 // #include <iostream>
 // #include <string>
 
-
 // enum class proffesion
 //     {
 //         worker,
@@ -38,9 +37,6 @@
 //         }
 //     }
 // };
-
-
-
 
 // const int SIZE = 10;
 // void BubbleSort(Emploe * arr, int size);
@@ -113,7 +109,6 @@
         
 //     return 0;
 // }
-
 
 
 // #include <iostream>
