@@ -141,7 +141,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=home
+CMAKE_PROJECT_NAME:STATIC=MyStudies
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -206,10 +206,28 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+MyStudies_BINARY_DIR:STATIC=/home/home/Documents/Prata_cpp_tests/Tests/Homework/build
+
+//Value Computed by CMake
+MyStudies_SOURCE_DIR:STATIC=/home/home/Documents/Prata_cpp_tests/Tests/Homework
+
+//Value Computed by CMake
 home_BINARY_DIR:STATIC=/home/home/Documents/Prata_cpp_tests/Tests/Homework/build
 
 //Value Computed by CMake
 home_SOURCE_DIR:STATIC=/home/home/Documents/Prata_cpp_tests/Tests/Homework
+
+//Value Computed by CMake
+s_BINARY_DIR:STATIC=/home/home/Documents/Prata_cpp_tests/Tests/Homework/build
+
+//Value Computed by CMake
+s_SOURCE_DIR:STATIC=/home/home/Documents/Prata_cpp_tests/Tests/Homework
+
+//Value Computed by CMake
+snake_BINARY_DIR:STATIC=/home/home/Documents/Prata_cpp_tests/Tests/Homework/build
+
+//Value Computed by CMake
+snake_SOURCE_DIR:STATIC=/home/home/Documents/Prata_cpp_tests/Tests/Homework
 
 
 ########################

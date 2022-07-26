@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: home
+# Project: MyStudies
 # Configuration: Debug
 # =============================================================================
 
@@ -53,35 +53,36 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target home
+# Object build statements for EXECUTABLE target MyStudies
 
 
 #############################################
-# Order-only phony target for home
+# Order-only phony target for MyStudies
 
-build cmake_object_order_depends_target_home: phony || CMakeFiles/home.dir
+build cmake_object_order_depends_target_MyStudies: phony || CMakeFiles/MyStudies.dir
 
-build CMakeFiles/home.dir/main.cpp.o: CXX_COMPILER__home ../main.cpp || cmake_object_order_depends_target_home
-  DEP_FILE = CMakeFiles/home.dir/main.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/home.dir
-  OBJECT_FILE_DIR = CMakeFiles/home.dir
+build CMakeFiles/MyStudies.dir/C++_Learning/tasks_from_google.cpp.o: CXX_COMPILER__MyStudies ../C++_Learning/tasks_from_google.cpp || cmake_object_order_depends_target_MyStudies
+  DEP_FILE = CMakeFiles/MyStudies.dir/C++_Learning/tasks_from_google.cpp.o.d
+  FLAGS = -std=c++11 -pthread -g   -std=gnu++11
+  INCLUDES = -I../C++_Learning
+  OBJECT_DIR = CMakeFiles/MyStudies.dir
+  OBJECT_FILE_DIR = CMakeFiles/MyStudies.dir/C++_Learning
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target home
+# Link build statements for EXECUTABLE target MyStudies
 
 
 #############################################
-# Link the executable home
+# Link the executable MyStudies
 
-build home: CXX_EXECUTABLE_LINKER__home CMakeFiles/home.dir/main.cpp.o
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/home.dir
+build MyStudies: CXX_EXECUTABLE_LINKER__MyStudies CMakeFiles/MyStudies.dir/C++_Learning/tasks_from_google.cpp.o
+  FLAGS = -std=c++11 -pthread -g
+  OBJECT_DIR = CMakeFiles/MyStudies.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = home
-  TARGET_PDB = home.dbg
+  TARGET_FILE = MyStudies
+  TARGET_PDB = MyStudies.dbg
 
 # =============================================================================
 # Target aliases.
@@ -94,7 +95,7 @@ build home: CXX_EXECUTABLE_LINKER__home CMakeFiles/home.dir/main.cpp.o
 #############################################
 # Folder: /home/home/Documents/Prata_cpp_tests/Tests/Homework/build
 
-build all: phony home
+build all: phony MyStudies
 
 # =============================================================================
 # Built-in targets
