@@ -649,160 +649,283 @@
 
 
 
-#include <iostream>
-#include <iomanip>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
+// #include <iostream>
+// #include <iomanip>
+// #include <string>
+// #include <vector>
+// #include <map>
+// #include <algorithm>
 
-using namespace std;
+// using namespace std;
 
-struct Person{
-    Person():lastName("noname"),firstName(""),age(0),job_id(0),position_id(0){}
-    Person(const string& _lastName, const string& _firstName, int _age, int _job_id, int _position_id)
-        :lastName(_lastName),
-          firstName(_firstName),
-          age(_age),
-          job_id(_job_id),
-          position_id(_position_id)
-    {}
-    string lastName;
-    string firstName;
-    int age;
-    int job_id;
-    int position_id;
-};
+// struct Person{
+//     Person():lastName("noname"),firstName(""),age(0),job_id(0),position_id(0){}
+//     Person(const string& _lastName, const string& _firstName, int _age, int _job_id, int _position_id)
+//         :lastName(_lastName),
+//           firstName(_firstName),
+//           age(_age),
+//           job_id(_job_id),
+//           position_id(_position_id)
+//     {}
+//     string lastName;
+//     string firstName;
+//     int age;
+//     int job_id;
+//     int position_id;
+// };
 
-struct Job{
-    Job():name("invalid job"),id(-1){}
-    Job(const string& _name, int _id):name(_name),id(_id){}
-    string name;
-    int id;
+// struct Job{
+//     Job():name("invalid job"),id(-1){}
+//     Job(const string& _name, int _id):name(_name),id(_id){}
+//     string name;
+//     int id;
 
-};
+// };
 
-struct Position{
-    Position():name("invalid position"),id(-1){}
-    Position(const string& _name, int _id):name(_name),id(_id){}
-    string name;
-    int id;
-};
+// struct Position{
+//     Position():name("invalid position"),id(-1){}
+//     Position(const string& _name, int _id):name(_name),id(_id){}
+//     string name;
+//     int id;
+// };
 
-bool compareByName(const Person& person1, const Person& person2){
-    if(person1.lastName==person2.lastName){
-        return person1.firstName<person2.firstName;
-    }
-    return person1.lastName<person2.lastName;
-}
+// bool compareByName(const Person& person1, const Person& person2){
+//     if(person1.lastName==person2.lastName){
+//         return person1.firstName<person2.firstName;
+//     }
+//     return person1.lastName<person2.lastName;
+// }
 
-bool compareByAge(const Person & p1, const Person & p2)
-{
-    return p1.age > p2.age;
-}
+// bool compareByAge(const Person & p1, const Person & p2)
+// {
+//     return p1.age > p2.age;
+// }
 
-class PersonsList{
-public:
+// class PersonsList{
+// public:
 
-    void addPerson(const Person& person){
-        persons.push_back(person);
-    }
-    void addPosition(const Position& position){
-        positionsMap[position.id]=position;
-    }
-    void addJob(const Job& job){
-        jobsMap[job.id]=job;
-    }
+//     void addPerson(const Person& person){
+//         persons.push_back(person);
+//     }
+//     void addPosition(const Position& position){
+//         positionsMap[position.id]=position;
+//     }
+//     void addJob(const Job& job){
+//         jobsMap[job.id]=job;
+//     }
 
-    void print(){
-        for(int i=0;i<(int)persons.size();i++){
+//     void print(){
+//         for(int i=0;i<(int)persons.size();i++){
 
-            Person& person=persons[i];
+//             Person& person=persons[i];
 
-            Job& job=jobsMap[person.job_id];
-            Position& position=positionsMap[person.position_id];
+//             Job& job=jobsMap[person.job_id];
+//             Position& position=positionsMap[person.position_id];
 
-            cout << setfill (' ') << std::setw (15) << person.lastName;
-            cout << setfill (' ') << std::setw (10) << person.firstName;
-            cout << setfill (' ') << std::setw (5) << person.age << " years";
-            cout << setfill (' ') << std::setw (20) << job.name;
-            cout << setfill (' ') << std::setw (20) << position.name;
-            cout << endl;
-        }
-    }
-
-    
-    
-    void sortByName(){
-        stable_sort(persons.begin(),persons.end(),compareByName);
-    }
-
-    void sortByAge(){
-        // ================================================= TODO
-        // programmer also want to change something else, not only this fucntion
-        stable_sort(persons.begin(), persons.end(), compareByAge);
-    }
-
-    void sortByJob(){
-        // ================================================= TODO
-        auto JM = jobsMap;
-        stable_sort(persons.begin(), persons.end(), [&JM](const Person & p1, const Person & p2){
-            return JM[p1.job_id].name < JM[p2.job_id].name;
-        });
-    }
+//             cout << setfill (' ') << std::setw (15) << person.lastName;
+//             cout << setfill (' ') << std::setw (10) << person.firstName;
+//             cout << setfill (' ') << std::setw (5) << person.age << " years";
+//             cout << setfill (' ') << std::setw (20) << job.name;
+//             cout << setfill (' ') << std::setw (20) << position.name;
+//             cout << endl;
+//         }
+//     }
 
     
-private:
-    std::vector<Person> persons;
+    
+//     void sortByName(){
+//         stable_sort(persons.begin(),persons.end(),compareByName);
+//     }
 
-    std::map<int,Job> jobsMap;
-    std::map<int,Position> positionsMap;
-};
+//     void sortByAge(){
+//         // ================================================= TODO
+//         // programmer also want to change something else, not only this fucntion
+//         stable_sort(persons.begin(), persons.end(), compareByAge);
+//     }
 
-int main()
-{
-    PersonsList list;
+//     void sortByJob(){
+//         // ================================================= TODO
+//         auto JM = jobsMap;
+//         stable_sort(persons.begin(), persons.end(), [&JM](const Person & p1, const Person & p2){
+//             return JM[p1.job_id].name < JM[p2.job_id].name;
+//         });
+//     }
 
-    Job google("Google",1);
-    Job microsoft("Microsoft",2);
-    Job hp("Aewlett-Packard",3);
+    
+// private:
+//     std::vector<Person> persons;
 
-    list.addJob(google);
-    list.addJob(microsoft);
-    list.addJob(hp);
+//     std::map<int,Job> jobsMap;
+//     std::map<int,Position> positionsMap;
+// };
 
-    Position junior("Junior developer",1);
-    Position senior("Senior developer",2);
-    Position manager("Manager",3);
+// int main()
+// {
+//     PersonsList list;
 
-    list.addPosition(junior);
-    list.addPosition(senior);
-    list.addPosition(manager);
+//     Job google("Google",1);
+//     Job microsoft("Microsoft",2);
+//     Job hp("Aewlett-Packard",3);
 
-    list.addPerson(Person("Ivanov","Ivan",21,google.id,junior.id));
-    list.addPerson(Person("Sidorov","Nikolay",28,google.id,senior.id));
-    list.addPerson(Person("Ivanov","Maxim",28,google.id,manager.id));
+//     list.addJob(google);
+//     list.addJob(microsoft);
+//     list.addJob(hp);
 
-    list.addPerson(Person("Volkova","Katerina",22,microsoft.id,junior.id));
-    list.addPerson(Person("Demidov","Vitaly",35,microsoft.id,manager.id));
+//     Position junior("Junior developer",1);
+//     Position senior("Senior developer",2);
+//     Position manager("Manager",3);
 
-    list.addPerson(Person("Bodrov","Boris",40,hp.id,senior.id));
+//     list.addPosition(junior);
+//     list.addPosition(senior);
+//     list.addPosition(manager);
 
-    list.sortByName();
-    cout<<"Sorted by name:"<<endl;
-    list.print();
+//     list.addPerson(Person("Ivanov","Ivan",21,google.id,junior.id));
+//     list.addPerson(Person("Sidorov","Nikolay",28,google.id,senior.id));
+//     list.addPerson(Person("Ivanov","Maxim",28,google.id,manager.id));
 
-    cout<<endl;
+//     list.addPerson(Person("Volkova","Katerina",22,microsoft.id,junior.id));
+//     list.addPerson(Person("Demidov","Vitaly",35,microsoft.id,manager.id));
 
-    list.sortByAge();
-    cout<<"Sorted by age:"<<endl;
-    list.print();
+//     list.addPerson(Person("Bodrov","Boris",40,hp.id,senior.id));
 
-    cout<<endl;
+//     list.sortByName();
+//     cout<<"Sorted by name:"<<endl;
+//     list.print();
 
-    list.sortByJob();
-    cout<<"Sorted by job:"<<endl;
-    list.print();
+//     cout<<endl;
 
-    return 0;
-}
+//     list.sortByAge();
+//     cout<<"Sorted by age:"<<endl;
+//     list.print();
+
+//     cout<<endl;
+
+//     list.sortByJob();
+//     cout<<"Sorted by job:"<<endl;
+//     list.print();
+
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <memory>
+
+// class TFish
+// {
+// public:
+//     virtual void Show() {std::cout << "TFishA\n";}
+// };
+// class TTura : public TFish
+// {
+
+// public:
+//     void Show() {std::cout << "TTura\n";}
+//     void SomeFoo() {std::cout << "SomeFoo TTura()\n";}
+// };
+
+// class TCarp : public TFish
+// {
+
+// public:
+//     void Show() {std::cout << "TCarp";}
+
+//     void SomeFooTCarp() {std::cout << "SomeFoo TCarp ()\n";}
+// };
+
+
+// void foo(TFish * fish)
+// {
+//     TTura * tura = dynamic_cast<TTura *> (fish);
+//     if (tura)
+//     {
+//         tura->SomeFoo();
+//     }
+    
+//     std::cout << std::endl;
+//     TCarp *tura1 = dynamic_cast<TCarp *> (fish);
+//     if (tura1)
+//     {
+//         tura1->SomeFooTCarp();
+//     }
+// }
+
+
+
+// int main()
+// {   
+//     TTura f1;
+//     TCarp f2;
+
+//     foo(&f1);
+//     foo(&f2);
+//     return 0;
+// }
+
+// #include <ctime>
+// #include <cstdlib>
+// #include <iostream>
+ 
+// using std::cout;
+ 
+// /*ИЕРАРХИЯ КЛАССОВ*/
+// class Grand{
+//     int hold;
+// public:
+//     Grand(int h=0):hold(h){}
+//     virtual void Speak() const { cout << "I'm a grang class!\n";}
+//     virtual int Value() const { return hold; }
+//     virtual ~Grand(){}
+ 
+// };
+
+// class Superb: public Grand{
+// public:
+//     Superb(int h = 0):Grand(h){}
+//     void Speak()       const { cout << "I'm a superb class!!\n"; }
+//     virtual void Say() const{  cout << "I hold the superb value of " <<  Value() << '\n';    }
+ 
+// };
+
+// class Magnificent: public Superb{
+//     char ch;
+// public:
+//     Magnificent(int h = 0, char c = 'A'):Superb(h),ch(c){}
+//     void Speak() const { cout << "I'm a magnificent class!!!\n"; }
+//     void Say()   const { cout << "I hold the character ch " << ch << " and the integer " << Value() << '\n'; }
+// };
+// /*КОНЕЦ ИЕРАРХИИ КЛАССОВ*/
+ 
+// Grand* GetOne(); //прототип функции, возвращающей адрес объекта случайного типа
+ 
+// int main(){
+//     srand(std::time(0));
+ 
+//     Grand  *pg;     //В pg будет записываться адрес объекта случайного типа
+//     Superb *ps;     //ps будет использован для вызова метода Say
+ 
+//     for (auto i=0; i<5; i++){
+//         pg = GetOne();
+//         pg->Speak();
+//         if (pg != dynamic_cast<Superb *> (pg))
+//         {
+//             std::cout << "\n";
+//         }
+//         if (ps = dynamic_cast<Superb *>(pg))
+//         {
+//             ps->Say() ; //Проверка на успешность (безопасность) и выполнения метода Say
+//             cout << "\n";
+//         }
+//     }
+// }
+ 
+// /*генерация объекта случайного типа*/
+// Grand* GetOne(){
+//   Grand *p;
+//    switch (rand()%3){
+//     case 0: p = new Grand  (rand()  % 100);     break;
+//     case 1: p = new Superb (rand () % 100);  break;
+//     case 2: p = new Magnificent (rand() % 100, 'A' + rand() % 26); break;
+//    }
+//   return p; //возврат указателя на объект типа Grand
+// }
+
