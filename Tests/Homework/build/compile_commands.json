@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/home/Documents/Prata_cpp_tests/Tests/Homework/build",
-  "command": "/usr/bin/g++   -I../C++_Learning   -std=c++11 -pthread -g   -std=gnu++11 -o CMakeFiles/MyStudies.dir/C++_Learning/tasks_from_google.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/Homework/C++_Learning/tasks_from_google.cpp",
-  "file": "/home/home/Documents/Prata_cpp_tests/Tests/Homework/C++_Learning/tasks_from_google.cpp"
+  "command": "/usr/bin/g++   -I../Quest   -std=c++11 -pthread -g   -std=gnu++11 -o CMakeFiles/MyStudies.dir/Quest/quest_from_inet.cpp.o -c /home/home/Documents/Prata_cpp_tests/Tests/Homework/Quest/quest_from_inet.cpp",
+  "file": "/home/home/Documents/Prata_cpp_tests/Tests/Homework/Quest/quest_from_inet.cpp"
 }
 ]

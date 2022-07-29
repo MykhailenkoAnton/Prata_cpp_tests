@@ -929,3 +929,45 @@
 //   return p; //возврат указателя на объект типа Grand
 // }
 
+
+// #include <iostream>
+
+// class A
+// {
+
+// public:
+//     A() { std::cout << "class A. Constructor\n";}
+//     ~A() { std::cout << "class A. Destructor\n";}
+// };
+
+// class A1
+// {
+// private:
+//     A a;
+// public:
+//     A1(){ std::cout << "class A1. Constructor\n";}
+//     ~A1() { std::cout << "class A1. Destructor\n";}
+// };
+
+// class C
+// {
+// private:
+//     A1 a1;
+// public:
+//     C() { std::cout << "class C. Constructor\n";}
+//     ~C() { std::cout << "class C. Destructor\n";}
+// };
+
+// class D : public C
+// {
+// public:
+//     D() { std::cout << "class D. Constructor\n";}
+//     ~D() { std::cout << "class D. Destructor\n";}
+// };
+
+
+// int main()
+// {
+//     D c;
+//     return 0;
+// }
