@@ -15,7 +15,7 @@ set(CMAKE_CXX_STANDARD 11)            # Enable c++14 standard
 set(SOURCE_FILES
     # C++_Learning/tasks_from_google.cpp
     # C++_Learning/sen.cpp
-    Quest/quest_from_inet.cpp
+    Quest/main.cpp
 )
 
 # Add headers files.

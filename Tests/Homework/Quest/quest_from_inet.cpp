@@ -1,31 +1,11 @@
 #include <iostream>
-class A
+#include <list>
+int foo(int n)
 {
-public:
-A() {}
-~A(){}
-void Show() {std::cout << "A\n";}
-};
-class B : public A
-
-{
-public:
-    B() {}
-    ~B() {}
-    void Show() {std::cout << "B\n";}
-};
-
-
-
-void Foo(A b);
+    return (n == 1) ? 1 : n * foo(n - 1);
+}
 int main()
 {
-    A b;
-    Foo(b);
+    std::cout << foo(6);
     return 0;
-}
-
-void Foo(A b)
-{
-    b.Show();
 }

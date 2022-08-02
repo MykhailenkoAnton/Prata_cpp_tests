@@ -61,8 +61,8 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_MyStudies: phony || CMakeFiles/MyStudies.dir
 
-build CMakeFiles/MyStudies.dir/Quest/quest_from_inet.cpp.o: CXX_COMPILER__MyStudies ../Quest/quest_from_inet.cpp || cmake_object_order_depends_target_MyStudies
-  DEP_FILE = CMakeFiles/MyStudies.dir/Quest/quest_from_inet.cpp.o.d
+build CMakeFiles/MyStudies.dir/Quest/main.cpp.o: CXX_COMPILER__MyStudies ../Quest/main.cpp || cmake_object_order_depends_target_MyStudies
+  DEP_FILE = CMakeFiles/MyStudies.dir/Quest/main.cpp.o.d
   FLAGS = -std=c++11 -pthread -g   -std=gnu++11
   INCLUDES = -I../Quest
   OBJECT_DIR = CMakeFiles/MyStudies.dir
@@ -76,7 +76,7 @@ build CMakeFiles/MyStudies.dir/Quest/quest_from_inet.cpp.o: CXX_COMPILER__MyStud
 #############################################
 # Link the executable MyStudies
 
-build MyStudies: CXX_EXECUTABLE_LINKER__MyStudies CMakeFiles/MyStudies.dir/Quest/quest_from_inet.cpp.o
+build MyStudies: CXX_EXECUTABLE_LINKER__MyStudies CMakeFiles/MyStudies.dir/Quest/main.cpp.o
   FLAGS = -std=c++11 -pthread -g
   OBJECT_DIR = CMakeFiles/MyStudies.dir
   POST_BUILD = :
